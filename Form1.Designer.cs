@@ -49,30 +49,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pictureBoxPanel = new System.Windows.Forms.Panel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.brightnessPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.brightnessTrackBar = new System.Windows.Forms.TrackBar();
-            this.brightnessSave = new System.Windows.Forms.Button();
-            this.brightnessTrackBarLabel = new System.Windows.Forms.Label();
-            this.brightnessLabel = new System.Windows.Forms.Label();
-            this.contrastPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.contrastLabel = new System.Windows.Forms.Label();
-            this.contrastTrackbar = new System.Windows.Forms.TrackBar();
-            this.contrastTrackBarLabel = new System.Windows.Forms.Label();
-            this.contrastSave = new System.Windows.Forms.Button();
-            this.invertPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.invertLabel = new System.Windows.Forms.Label();
-            this.invertBtn = new System.Windows.Forms.Button();
-            this.invertTrackBar = new System.Windows.Forms.TrackBar();
-            this.invertTrackBarLabel = new System.Windows.Forms.Label();
-            this.noisePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.noiseLabel = new System.Windows.Forms.Label();
-            this.noiseTrackBar = new System.Windows.Forms.TrackBar();
-            this.noiseTrackbarLabel = new System.Windows.Forms.Label();
-            this.noiseSave = new System.Windows.Forms.Button();
-            this.procgenPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.procgenLabel = new System.Windows.Forms.Label();
-            this.procgenLandBtn = new System.Windows.Forms.Button();
-            this.procgenSky = new System.Windows.Forms.Button();
             this.convolutionPanel = new System.Windows.Forms.TableLayoutPanel();
             this.convolutionLabel = new System.Windows.Forms.Label();
             this.convolutionBtn = new System.Windows.Forms.Button();
@@ -128,6 +104,30 @@
             this.greyscaleLabel = new System.Windows.Forms.Label();
             this.greyscaleBtn = new System.Windows.Forms.Button();
             this.greyscaleSave = new System.Windows.Forms.Button();
+            this.brightnessPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.brightnessTrackBar = new System.Windows.Forms.TrackBar();
+            this.brightnessSave = new System.Windows.Forms.Button();
+            this.brightnessTrackBarLabel = new System.Windows.Forms.Label();
+            this.brightnessLabel = new System.Windows.Forms.Label();
+            this.contrastPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.contrastLabel = new System.Windows.Forms.Label();
+            this.contrastTrackbar = new System.Windows.Forms.TrackBar();
+            this.contrastTrackBarLabel = new System.Windows.Forms.Label();
+            this.contrastSave = new System.Windows.Forms.Button();
+            this.invertPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.invertLabel = new System.Windows.Forms.Label();
+            this.invertBtn = new System.Windows.Forms.Button();
+            this.invertTrackBar = new System.Windows.Forms.TrackBar();
+            this.invertTrackBarLabel = new System.Windows.Forms.Label();
+            this.noisePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.noiseLabel = new System.Windows.Forms.Label();
+            this.noiseTrackBar = new System.Windows.Forms.TrackBar();
+            this.noiseTrackbarLabel = new System.Windows.Forms.Label();
+            this.noiseSave = new System.Windows.Forms.Button();
+            this.procgenPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.procgenLabel = new System.Windows.Forms.Label();
+            this.procgenLandBtn = new System.Windows.Forms.Button();
+            this.procgenSky = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.bottomInfoPanel = new System.Windows.Forms.TableLayoutPanel();
             this.coordsLabel = new System.Windows.Forms.Label();
@@ -151,15 +151,6 @@
             this.splitContainer1.SuspendLayout();
             this.pictureBoxPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
-            this.brightnessPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).BeginInit();
-            this.contrastPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).BeginInit();
-            this.invertPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).BeginInit();
-            this.noisePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).BeginInit();
-            this.procgenPanel.SuspendLayout();
             this.convolutionPanel.SuspendLayout();
             this.convolutionMatrixPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.convolution0x0)).BeginInit();
@@ -199,6 +190,15 @@
             this.quantizePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantizeTrackBar)).BeginInit();
             this.greyscalePanel.SuspendLayout();
+            this.brightnessPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).BeginInit();
+            this.contrastPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).BeginInit();
+            this.invertPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).BeginInit();
+            this.noisePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).BeginInit();
+            this.procgenPanel.SuspendLayout();
             this.bottomInfoPanel.SuspendLayout();
             this.topToolbarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thicknessTrackBar)).BeginInit();
@@ -214,7 +214,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1337, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(918, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -268,63 +268,63 @@
             // brightnessToolStripMenuItem
             // 
             this.brightnessToolStripMenuItem.Name = "brightnessToolStripMenuItem";
-            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.brightnessToolStripMenuItem.Text = "Brightness";
             this.brightnessToolStripMenuItem.Click += new System.EventHandler(this.brightnessToolStripMenuItem_Click);
             // 
             // negativeToolStripMenuItem
             // 
             this.negativeToolStripMenuItem.Name = "negativeToolStripMenuItem";
-            this.negativeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.negativeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.negativeToolStripMenuItem.Text = "Negative";
             this.negativeToolStripMenuItem.Click += new System.EventHandler(this.negativeToolStripMenuItem_Click);
             // 
             // noiseToolStripMenuItem
             // 
             this.noiseToolStripMenuItem.Name = "noiseToolStripMenuItem";
-            this.noiseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.noiseToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.noiseToolStripMenuItem.Text = "Noise";
             this.noiseToolStripMenuItem.Click += new System.EventHandler(this.noiseToolStripMenuItem_Click);
             // 
             // contrastToolStripMenuItem
             // 
             this.contrastToolStripMenuItem.Name = "contrastToolStripMenuItem";
-            this.contrastToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contrastToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.contrastToolStripMenuItem.Text = "Contrast";
             this.contrastToolStripMenuItem.Click += new System.EventHandler(this.contrastToolStripMenuItem_Click);
             // 
             // greyscaleToolStripMenuItem
             // 
             this.greyscaleToolStripMenuItem.Name = "greyscaleToolStripMenuItem";
-            this.greyscaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.greyscaleToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.greyscaleToolStripMenuItem.Text = "Greyscale";
             this.greyscaleToolStripMenuItem.Click += new System.EventHandler(this.greyscaleToolStripMenuItem_Click);
             // 
             // quantizeToolStripMenuItem
             // 
             this.quantizeToolStripMenuItem.Name = "quantizeToolStripMenuItem";
-            this.quantizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quantizeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.quantizeToolStripMenuItem.Text = "Quantize";
             this.quantizeToolStripMenuItem.Click += new System.EventHandler(this.quantizeToolStripMenuItem_Click);
             // 
             // ditherToolStripMenuItem
             // 
             this.ditherToolStripMenuItem.Name = "ditherToolStripMenuItem";
-            this.ditherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ditherToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.ditherToolStripMenuItem.Text = "Dither";
             this.ditherToolStripMenuItem.Click += new System.EventHandler(this.ditherToolStripMenuItem_Click);
             // 
             // convolutionToolStripMenuItem
             // 
             this.convolutionToolStripMenuItem.Name = "convolutionToolStripMenuItem";
-            this.convolutionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.convolutionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.convolutionToolStripMenuItem.Text = "Convolution";
             this.convolutionToolStripMenuItem.Click += new System.EventHandler(this.convolutionToolStripMenuItem_Click);
             // 
             // proceduralGenToolStripMenuItem
             // 
             this.proceduralGenToolStripMenuItem.Name = "proceduralGenToolStripMenuItem";
-            this.proceduralGenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.proceduralGenToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.proceduralGenToolStripMenuItem.Text = "Procedural gen";
             this.proceduralGenToolStripMenuItem.Click += new System.EventHandler(this.proceduralGenToolStripMenuItem_Click);
             // 
@@ -369,8 +369,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.ditherPanel);
             this.splitContainer1.Panel2.Controls.Add(this.quantizePanel);
             this.splitContainer1.Panel2.Controls.Add(this.greyscalePanel);
-            this.splitContainer1.Size = new System.Drawing.Size(1331, 605);
-            this.splitContainer1.SplitterDistance = 941;
+            this.splitContainer1.Size = new System.Drawing.Size(912, 605);
+            this.splitContainer1.SplitterDistance = 644;
             this.splitContainer1.TabIndex = 2;
             // 
             // pictureBoxPanel
@@ -383,7 +383,7 @@
             this.pictureBoxPanel.Margin = new System.Windows.Forms.Padding(15);
             this.pictureBoxPanel.Name = "pictureBoxPanel";
             this.pictureBoxPanel.Padding = new System.Windows.Forms.Padding(15);
-            this.pictureBoxPanel.Size = new System.Drawing.Size(941, 605);
+            this.pictureBoxPanel.Size = new System.Drawing.Size(644, 605);
             this.pictureBoxPanel.TabIndex = 0;
             // 
             // pictureBox
@@ -391,7 +391,7 @@
             this.pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox.BackColor = System.Drawing.Color.White;
             this.pictureBox.BackgroundImage = global::PaintShop.Properties.Resources.png;
-            this.pictureBox.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox.Location = new System.Drawing.Point(-145, 3);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(738, 403);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -401,311 +401,6 @@
             this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
             this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseMove);
             this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseUp);
-            // 
-            // brightnessPanel
-            // 
-            this.brightnessPanel.ColumnCount = 1;
-            this.brightnessPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.brightnessPanel.Controls.Add(this.brightnessTrackBar, 0, 1);
-            this.brightnessPanel.Controls.Add(this.brightnessSave, 0, 3);
-            this.brightnessPanel.Controls.Add(this.brightnessTrackBarLabel, 0, 2);
-            this.brightnessPanel.Controls.Add(this.brightnessLabel, 0, 0);
-            this.brightnessPanel.Location = new System.Drawing.Point(0, 0);
-            this.brightnessPanel.Name = "brightnessPanel";
-            this.brightnessPanel.RowCount = 7;
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
-            this.brightnessPanel.Size = new System.Drawing.Size(386, 573);
-            this.brightnessPanel.TabIndex = 0;
-            // 
-            // brightnessTrackBar
-            // 
-            this.brightnessTrackBar.BackColor = System.Drawing.SystemColors.Control;
-            this.brightnessTrackBar.Location = new System.Drawing.Point(3, 84);
-            this.brightnessTrackBar.Maximum = 255;
-            this.brightnessTrackBar.Minimum = -255;
-            this.brightnessTrackBar.Name = "brightnessTrackBar";
-            this.brightnessTrackBar.Size = new System.Drawing.Size(380, 45);
-            this.brightnessTrackBar.TabIndex = 0;
-            this.brightnessTrackBar.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // brightnessSave
-            // 
-            this.brightnessSave.Location = new System.Drawing.Point(3, 246);
-            this.brightnessSave.Name = "brightnessSave";
-            this.brightnessSave.Size = new System.Drawing.Size(380, 75);
-            this.brightnessSave.TabIndex = 0;
-            this.brightnessSave.Text = "Set Filter";
-            this.brightnessSave.UseVisualStyleBackColor = true;
-            this.brightnessSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // brightnessTrackBarLabel
-            // 
-            this.brightnessTrackBarLabel.AutoSize = true;
-            this.brightnessTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.brightnessTrackBarLabel.Location = new System.Drawing.Point(3, 162);
-            this.brightnessTrackBarLabel.Name = "brightnessTrackBarLabel";
-            this.brightnessTrackBarLabel.Size = new System.Drawing.Size(380, 81);
-            this.brightnessTrackBarLabel.TabIndex = 1;
-            this.brightnessTrackBarLabel.Text = "0";
-            this.brightnessTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // brightnessLabel
-            // 
-            this.brightnessLabel.AutoSize = true;
-            this.brightnessLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.brightnessLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brightnessLabel.Location = new System.Drawing.Point(3, 0);
-            this.brightnessLabel.Name = "brightnessLabel";
-            this.brightnessLabel.Size = new System.Drawing.Size(380, 81);
-            this.brightnessLabel.TabIndex = 2;
-            this.brightnessLabel.Text = "Brightness";
-            this.brightnessLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contrastPanel
-            // 
-            this.contrastPanel.ColumnCount = 1;
-            this.contrastPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.contrastPanel.Controls.Add(this.contrastLabel, 0, 0);
-            this.contrastPanel.Controls.Add(this.contrastTrackbar, 0, 1);
-            this.contrastPanel.Controls.Add(this.contrastTrackBarLabel, 0, 2);
-            this.contrastPanel.Controls.Add(this.contrastSave, 0, 3);
-            this.contrastPanel.Location = new System.Drawing.Point(3, -3);
-            this.contrastPanel.Name = "contrastPanel";
-            this.contrastPanel.RowCount = 5;
-            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.39378F));
-            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.60622F));
-            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 319F));
-            this.contrastPanel.Size = new System.Drawing.Size(380, 576);
-            this.contrastPanel.TabIndex = 3;
-            // 
-            // contrastLabel
-            // 
-            this.contrastLabel.AutoSize = true;
-            this.contrastLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contrastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contrastLabel.Location = new System.Drawing.Point(3, 0);
-            this.contrastLabel.Name = "contrastLabel";
-            this.contrastLabel.Size = new System.Drawing.Size(374, 96);
-            this.contrastLabel.TabIndex = 0;
-            this.contrastLabel.Text = "Contrast";
-            this.contrastLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contrastTrackbar
-            // 
-            this.contrastTrackbar.Location = new System.Drawing.Point(3, 99);
-            this.contrastTrackbar.Maximum = 100;
-            this.contrastTrackbar.Minimum = -100;
-            this.contrastTrackbar.Name = "contrastTrackbar";
-            this.contrastTrackbar.Size = new System.Drawing.Size(371, 38);
-            this.contrastTrackbar.TabIndex = 1;
-            this.contrastTrackbar.Scroll += new System.EventHandler(this.contrastTrackbar_Scroll);
-            // 
-            // contrastTrackBarLabel
-            // 
-            this.contrastTrackBarLabel.AutoSize = true;
-            this.contrastTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contrastTrackBarLabel.Location = new System.Drawing.Point(3, 140);
-            this.contrastTrackBarLabel.Name = "contrastTrackBarLabel";
-            this.contrastTrackBarLabel.Size = new System.Drawing.Size(374, 37);
-            this.contrastTrackBarLabel.TabIndex = 2;
-            this.contrastTrackBarLabel.Text = "0";
-            this.contrastTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contrastSave
-            // 
-            this.contrastSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contrastSave.Location = new System.Drawing.Point(3, 180);
-            this.contrastSave.Name = "contrastSave";
-            this.contrastSave.Size = new System.Drawing.Size(374, 73);
-            this.contrastSave.TabIndex = 3;
-            this.contrastSave.Text = "Set Filter";
-            this.contrastSave.UseVisualStyleBackColor = true;
-            this.contrastSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // invertPanel
-            // 
-            this.invertPanel.ColumnCount = 1;
-            this.invertPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.invertPanel.Controls.Add(this.invertLabel, 0, 0);
-            this.invertPanel.Controls.Add(this.invertBtn, 0, 3);
-            this.invertPanel.Controls.Add(this.invertTrackBar, 0, 1);
-            this.invertPanel.Controls.Add(this.invertTrackBarLabel, 0, 2);
-            this.invertPanel.Location = new System.Drawing.Point(0, 0);
-            this.invertPanel.Name = "invertPanel";
-            this.invertPanel.RowCount = 4;
-            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.78862F));
-            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.21138F));
-            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 351F));
-            this.invertPanel.Size = new System.Drawing.Size(386, 549);
-            this.invertPanel.TabIndex = 1;
-            this.invertPanel.Visible = false;
-            // 
-            // invertLabel
-            // 
-            this.invertLabel.AutoSize = true;
-            this.invertLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.invertLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invertLabel.Location = new System.Drawing.Point(3, 0);
-            this.invertLabel.Name = "invertLabel";
-            this.invertLabel.Size = new System.Drawing.Size(380, 93);
-            this.invertLabel.TabIndex = 2;
-            this.invertLabel.Text = "Invert";
-            this.invertLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // invertBtn
-            // 
-            this.invertBtn.Location = new System.Drawing.Point(3, 200);
-            this.invertBtn.Name = "invertBtn";
-            this.invertBtn.Size = new System.Drawing.Size(380, 78);
-            this.invertBtn.TabIndex = 0;
-            this.invertBtn.Text = "Set Filter";
-            this.invertBtn.UseVisualStyleBackColor = true;
-            this.invertBtn.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // invertTrackBar
-            // 
-            this.invertTrackBar.Location = new System.Drawing.Point(3, 96);
-            this.invertTrackBar.Maximum = 255;
-            this.invertTrackBar.Name = "invertTrackBar";
-            this.invertTrackBar.Size = new System.Drawing.Size(380, 45);
-            this.invertTrackBar.TabIndex = 1;
-            this.invertTrackBar.Value = 1;
-            this.invertTrackBar.Scroll += new System.EventHandler(this.invertTrackBar_Scroll);
-            // 
-            // invertTrackBarLabel
-            // 
-            this.invertTrackBarLabel.AutoSize = true;
-            this.invertTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.invertTrackBarLabel.Location = new System.Drawing.Point(3, 151);
-            this.invertTrackBarLabel.Name = "invertTrackBarLabel";
-            this.invertTrackBarLabel.Size = new System.Drawing.Size(380, 46);
-            this.invertTrackBarLabel.TabIndex = 3;
-            this.invertTrackBarLabel.Text = "0";
-            this.invertTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // noisePanel
-            // 
-            this.noisePanel.ColumnCount = 1;
-            this.noisePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.noisePanel.Controls.Add(this.noiseLabel, 0, 0);
-            this.noisePanel.Controls.Add(this.noiseTrackBar, 0, 1);
-            this.noisePanel.Controls.Add(this.noiseTrackbarLabel, 0, 2);
-            this.noisePanel.Controls.Add(this.noiseSave, 0, 3);
-            this.noisePanel.Location = new System.Drawing.Point(0, 0);
-            this.noisePanel.Name = "noisePanel";
-            this.noisePanel.RowCount = 5;
-            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.68421F));
-            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.31579F));
-            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 269F));
-            this.noisePanel.Size = new System.Drawing.Size(383, 573);
-            this.noisePanel.TabIndex = 2;
-            // 
-            // noiseLabel
-            // 
-            this.noiseLabel.AutoSize = true;
-            this.noiseLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noiseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noiseLabel.Location = new System.Drawing.Point(3, 0);
-            this.noiseLabel.Name = "noiseLabel";
-            this.noiseLabel.Size = new System.Drawing.Size(377, 69);
-            this.noiseLabel.TabIndex = 0;
-            this.noiseLabel.Text = "Noise";
-            this.noiseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // noiseTrackBar
-            // 
-            this.noiseTrackBar.Location = new System.Drawing.Point(3, 72);
-            this.noiseTrackBar.Maximum = 255;
-            this.noiseTrackBar.Minimum = 1;
-            this.noiseTrackBar.Name = "noiseTrackBar";
-            this.noiseTrackBar.Size = new System.Drawing.Size(374, 45);
-            this.noiseTrackBar.TabIndex = 1;
-            this.noiseTrackBar.Value = 1;
-            this.noiseTrackBar.Scroll += new System.EventHandler(this.noiseTrackBar_Scroll);
-            // 
-            // noiseTrackbarLabel
-            // 
-            this.noiseTrackbarLabel.AutoSize = true;
-            this.noiseTrackbarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noiseTrackbarLabel.Location = new System.Drawing.Point(3, 142);
-            this.noiseTrackbarLabel.Name = "noiseTrackbarLabel";
-            this.noiseTrackbarLabel.Size = new System.Drawing.Size(377, 73);
-            this.noiseTrackbarLabel.TabIndex = 2;
-            this.noiseTrackbarLabel.Text = "0";
-            this.noiseTrackbarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // noiseSave
-            // 
-            this.noiseSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noiseSave.Location = new System.Drawing.Point(3, 218);
-            this.noiseSave.Name = "noiseSave";
-            this.noiseSave.Size = new System.Drawing.Size(377, 82);
-            this.noiseSave.TabIndex = 3;
-            this.noiseSave.Text = "Set Filter";
-            this.noiseSave.UseVisualStyleBackColor = true;
-            this.noiseSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // procgenPanel
-            // 
-            this.procgenPanel.ColumnCount = 1;
-            this.procgenPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.procgenPanel.Controls.Add(this.procgenLabel, 0, 0);
-            this.procgenPanel.Controls.Add(this.procgenLandBtn, 0, 1);
-            this.procgenPanel.Controls.Add(this.procgenSky, 0, 2);
-            this.procgenPanel.Location = new System.Drawing.Point(0, 0);
-            this.procgenPanel.Name = "procgenPanel";
-            this.procgenPanel.RowCount = 4;
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.24324F));
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.75676F));
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 286F));
-            this.procgenPanel.Size = new System.Drawing.Size(386, 549);
-            this.procgenPanel.TabIndex = 8;
-            // 
-            // procgenLabel
-            // 
-            this.procgenLabel.AutoSize = true;
-            this.procgenLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.procgenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.procgenLabel.Location = new System.Drawing.Point(3, 0);
-            this.procgenLabel.Name = "procgenLabel";
-            this.procgenLabel.Size = new System.Drawing.Size(380, 71);
-            this.procgenLabel.TabIndex = 0;
-            this.procgenLabel.Text = "Procedural Generation";
-            this.procgenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // procgenLandBtn
-            // 
-            this.procgenLandBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.procgenLandBtn.Location = new System.Drawing.Point(3, 74);
-            this.procgenLandBtn.Name = "procgenLandBtn";
-            this.procgenLandBtn.Size = new System.Drawing.Size(380, 88);
-            this.procgenLandBtn.TabIndex = 1;
-            this.procgenLandBtn.Text = "Generate Land";
-            this.procgenLandBtn.UseVisualStyleBackColor = true;
-            this.procgenLandBtn.Click += new System.EventHandler(this.procgenLandBtn_Click);
-            // 
-            // procgenSky
-            // 
-            this.procgenSky.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.procgenSky.Location = new System.Drawing.Point(3, 168);
-            this.procgenSky.Name = "procgenSky";
-            this.procgenSky.Size = new System.Drawing.Size(380, 91);
-            this.procgenSky.TabIndex = 2;
-            this.procgenSky.Text = "Generate Sky";
-            this.procgenSky.UseVisualStyleBackColor = true;
-            this.procgenSky.Click += new System.EventHandler(this.procgenSky_Click);
             // 
             // convolutionPanel
             // 
@@ -718,7 +413,8 @@
             this.convolutionPanel.Controls.Add(this.convolutionNormalize, 0, 4);
             this.convolutionPanel.Controls.Add(this.convolutionLabel2, 0, 3);
             this.convolutionPanel.Controls.Add(this.convolutionLabel3, 0, 4);
-            this.convolutionPanel.Location = new System.Drawing.Point(0, -3);
+            this.convolutionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionPanel.Location = new System.Drawing.Point(0, 0);
             this.convolutionPanel.Name = "convolutionPanel";
             this.convolutionPanel.RowCount = 7;
             this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.76744F));
@@ -728,7 +424,7 @@
             this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.convolutionPanel.Size = new System.Drawing.Size(389, 564);
+            this.convolutionPanel.Size = new System.Drawing.Size(264, 605);
             this.convolutionPanel.TabIndex = 7;
             // 
             // convolutionLabel
@@ -738,7 +434,7 @@
             this.convolutionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convolutionLabel.Location = new System.Drawing.Point(3, 0);
             this.convolutionLabel.Name = "convolutionLabel";
-            this.convolutionLabel.Size = new System.Drawing.Size(383, 77);
+            this.convolutionLabel.Size = new System.Drawing.Size(258, 95);
             this.convolutionLabel.TabIndex = 0;
             this.convolutionLabel.Text = "Convolution";
             this.convolutionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -746,9 +442,10 @@
             // convolutionBtn
             // 
             this.convolutionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionBtn.Location = new System.Drawing.Point(3, 80);
+            this.convolutionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolutionBtn.Location = new System.Drawing.Point(3, 98);
             this.convolutionBtn.Name = "convolutionBtn";
-            this.convolutionBtn.Size = new System.Drawing.Size(383, 89);
+            this.convolutionBtn.Size = new System.Drawing.Size(258, 111);
             this.convolutionBtn.TabIndex = 1;
             this.convolutionBtn.Text = "Apply Convolution";
             this.convolutionBtn.UseVisualStyleBackColor = true;
@@ -757,9 +454,10 @@
             // convolutionSave
             // 
             this.convolutionSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionSave.Location = new System.Drawing.Point(3, 175);
+            this.convolutionSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolutionSave.Location = new System.Drawing.Point(3, 215);
             this.convolutionSave.Name = "convolutionSave";
-            this.convolutionSave.Size = new System.Drawing.Size(383, 83);
+            this.convolutionSave.Size = new System.Drawing.Size(258, 83);
             this.convolutionSave.TabIndex = 2;
             this.convolutionSave.Text = "Set Filter";
             this.convolutionSave.UseVisualStyleBackColor = true;
@@ -781,18 +479,19 @@
             this.convolutionMatrixPanel.Controls.Add(this.convolution2x1, 1, 2);
             this.convolutionMatrixPanel.Controls.Add(this.convolution2x2, 2, 2);
             this.convolutionMatrixPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionMatrixPanel.Location = new System.Drawing.Point(3, 297);
+            this.convolutionMatrixPanel.Location = new System.Drawing.Point(3, 337);
             this.convolutionMatrixPanel.Name = "convolutionMatrixPanel";
             this.convolutionMatrixPanel.RowCount = 3;
             this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.Size = new System.Drawing.Size(383, 132);
+            this.convolutionMatrixPanel.Size = new System.Drawing.Size(258, 132);
             this.convolutionMatrixPanel.TabIndex = 3;
             // 
             // convolution0x0
             // 
             this.convolution0x0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution0x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convolution0x0.Location = new System.Drawing.Point(3, 3);
             this.convolution0x0.Minimum = new decimal(new int[] {
             100,
@@ -800,7 +499,7 @@
             0,
             -2147483648});
             this.convolution0x0.Name = "convolution0x0";
-            this.convolution0x0.Size = new System.Drawing.Size(121, 20);
+            this.convolution0x0.Size = new System.Drawing.Size(80, 26);
             this.convolution0x0.TabIndex = 0;
             this.convolution0x0.Value = new decimal(new int[] {
             1,
@@ -811,14 +510,15 @@
             // convolution0x1
             // 
             this.convolution0x1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution0x1.Location = new System.Drawing.Point(130, 3);
+            this.convolution0x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolution0x1.Location = new System.Drawing.Point(89, 3);
             this.convolution0x1.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.convolution0x1.Name = "convolution0x1";
-            this.convolution0x1.Size = new System.Drawing.Size(121, 20);
+            this.convolution0x1.Size = new System.Drawing.Size(80, 26);
             this.convolution0x1.TabIndex = 1;
             this.convolution0x1.Value = new decimal(new int[] {
             2,
@@ -829,14 +529,15 @@
             // convolution0x2
             // 
             this.convolution0x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution0x2.Location = new System.Drawing.Point(257, 3);
+            this.convolution0x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolution0x2.Location = new System.Drawing.Point(175, 3);
             this.convolution0x2.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.convolution0x2.Name = "convolution0x2";
-            this.convolution0x2.Size = new System.Drawing.Size(123, 20);
+            this.convolution0x2.Size = new System.Drawing.Size(80, 26);
             this.convolution0x2.TabIndex = 2;
             this.convolution0x2.Value = new decimal(new int[] {
             1,
@@ -847,14 +548,15 @@
             // convolution1x2
             // 
             this.convolution1x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution1x2.Location = new System.Drawing.Point(257, 47);
+            this.convolution1x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolution1x2.Location = new System.Drawing.Point(175, 47);
             this.convolution1x2.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.convolution1x2.Name = "convolution1x2";
-            this.convolution1x2.Size = new System.Drawing.Size(123, 20);
+            this.convolution1x2.Size = new System.Drawing.Size(80, 26);
             this.convolution1x2.TabIndex = 3;
             this.convolution1x2.Value = new decimal(new int[] {
             2,
@@ -865,14 +567,15 @@
             // convolution1x1
             // 
             this.convolution1x1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution1x1.Location = new System.Drawing.Point(130, 47);
+            this.convolution1x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolution1x1.Location = new System.Drawing.Point(89, 47);
             this.convolution1x1.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.convolution1x1.Name = "convolution1x1";
-            this.convolution1x1.Size = new System.Drawing.Size(121, 20);
+            this.convolution1x1.Size = new System.Drawing.Size(80, 26);
             this.convolution1x1.TabIndex = 4;
             this.convolution1x1.Value = new decimal(new int[] {
             4,
@@ -883,6 +586,7 @@
             // convolution1x0
             // 
             this.convolution1x0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution1x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convolution1x0.Location = new System.Drawing.Point(3, 47);
             this.convolution1x0.Minimum = new decimal(new int[] {
             100,
@@ -890,7 +594,7 @@
             0,
             -2147483648});
             this.convolution1x0.Name = "convolution1x0";
-            this.convolution1x0.Size = new System.Drawing.Size(121, 20);
+            this.convolution1x0.Size = new System.Drawing.Size(80, 26);
             this.convolution1x0.TabIndex = 5;
             this.convolution1x0.Value = new decimal(new int[] {
             2,
@@ -901,6 +605,7 @@
             // convolution2x0
             // 
             this.convolution2x0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution2x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convolution2x0.Location = new System.Drawing.Point(3, 91);
             this.convolution2x0.Minimum = new decimal(new int[] {
             100,
@@ -908,7 +613,7 @@
             0,
             -2147483648});
             this.convolution2x0.Name = "convolution2x0";
-            this.convolution2x0.Size = new System.Drawing.Size(121, 20);
+            this.convolution2x0.Size = new System.Drawing.Size(80, 26);
             this.convolution2x0.TabIndex = 6;
             this.convolution2x0.Value = new decimal(new int[] {
             1,
@@ -919,14 +624,15 @@
             // convolution2x1
             // 
             this.convolution2x1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution2x1.Location = new System.Drawing.Point(130, 91);
+            this.convolution2x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolution2x1.Location = new System.Drawing.Point(89, 91);
             this.convolution2x1.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.convolution2x1.Name = "convolution2x1";
-            this.convolution2x1.Size = new System.Drawing.Size(121, 20);
+            this.convolution2x1.Size = new System.Drawing.Size(80, 26);
             this.convolution2x1.TabIndex = 7;
             this.convolution2x1.Value = new decimal(new int[] {
             2,
@@ -937,14 +643,15 @@
             // convolution2x2
             // 
             this.convolution2x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution2x2.Location = new System.Drawing.Point(257, 91);
+            this.convolution2x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolution2x2.Location = new System.Drawing.Point(175, 91);
             this.convolution2x2.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.convolution2x2.Name = "convolution2x2";
-            this.convolution2x2.Size = new System.Drawing.Size(123, 20);
+            this.convolution2x2.Size = new System.Drawing.Size(80, 26);
             this.convolution2x2.TabIndex = 8;
             this.convolution2x2.Value = new decimal(new int[] {
             1,
@@ -954,14 +661,15 @@
             // 
             // convolutionNormalize
             // 
-            this.convolutionNormalize.Location = new System.Drawing.Point(3, 472);
+            this.convolutionNormalize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolutionNormalize.Location = new System.Drawing.Point(3, 512);
             this.convolutionNormalize.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.convolutionNormalize.Name = "convolutionNormalize";
-            this.convolutionNormalize.Size = new System.Drawing.Size(383, 20);
+            this.convolutionNormalize.Size = new System.Drawing.Size(258, 26);
             this.convolutionNormalize.TabIndex = 4;
             this.convolutionNormalize.Value = new decimal(new int[] {
             16,
@@ -973,9 +681,10 @@
             // 
             this.convolutionLabel2.AutoSize = true;
             this.convolutionLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionLabel2.Location = new System.Drawing.Point(3, 261);
+            this.convolutionLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolutionLabel2.Location = new System.Drawing.Point(3, 301);
             this.convolutionLabel2.Name = "convolutionLabel2";
-            this.convolutionLabel2.Size = new System.Drawing.Size(383, 33);
+            this.convolutionLabel2.Size = new System.Drawing.Size(258, 33);
             this.convolutionLabel2.TabIndex = 5;
             this.convolutionLabel2.Text = "Convolution Mask";
             this.convolutionLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -984,9 +693,10 @@
             // 
             this.convolutionLabel3.AutoSize = true;
             this.convolutionLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionLabel3.Location = new System.Drawing.Point(3, 432);
+            this.convolutionLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolutionLabel3.Location = new System.Drawing.Point(3, 472);
             this.convolutionLabel3.Name = "convolutionLabel3";
-            this.convolutionLabel3.Size = new System.Drawing.Size(383, 37);
+            this.convolutionLabel3.Size = new System.Drawing.Size(258, 37);
             this.convolutionLabel3.TabIndex = 6;
             this.convolutionLabel3.Text = "Normalisation Value";
             this.convolutionLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1001,7 +711,8 @@
             this.ditherPanel.Controls.Add(this.ditherBtn4x4, 0, 4);
             this.ditherPanel.Controls.Add(this.panel2, 0, 6);
             this.ditherPanel.Controls.Add(this.ditherLabel, 0, 0);
-            this.ditherPanel.Location = new System.Drawing.Point(0, -3);
+            this.ditherPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ditherPanel.Location = new System.Drawing.Point(0, 0);
             this.ditherPanel.Name = "ditherPanel";
             this.ditherPanel.RowCount = 8;
             this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.21951F));
@@ -1012,15 +723,16 @@
             this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 189F));
             this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.ditherPanel.Size = new System.Drawing.Size(386, 564);
+            this.ditherPanel.Size = new System.Drawing.Size(264, 605);
             this.ditherPanel.TabIndex = 6;
             // 
             // ditherBtn
             // 
             this.ditherBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherBtn.Location = new System.Drawing.Point(3, 95);
+            this.ditherBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ditherBtn.Location = new System.Drawing.Point(3, 116);
             this.ditherBtn.Name = "ditherBtn";
-            this.ditherBtn.Size = new System.Drawing.Size(380, 81);
+            this.ditherBtn.Size = new System.Drawing.Size(258, 101);
             this.ditherBtn.TabIndex = 1;
             this.ditherBtn.Text = "Apply Dither";
             this.ditherBtn.UseVisualStyleBackColor = true;
@@ -1029,9 +741,10 @@
             // ditherSave
             // 
             this.ditherSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherSave.Location = new System.Drawing.Point(3, 182);
+            this.ditherSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ditherSave.Location = new System.Drawing.Point(3, 223);
             this.ditherSave.Name = "ditherSave";
-            this.ditherSave.Size = new System.Drawing.Size(380, 38);
+            this.ditherSave.Size = new System.Drawing.Size(258, 38);
             this.ditherSave.TabIndex = 2;
             this.ditherSave.Text = "Set Filter";
             this.ditherSave.UseVisualStyleBackColor = true;
@@ -1040,9 +753,10 @@
             // ditherBtn2x2
             // 
             this.ditherBtn2x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherBtn2x2.Location = new System.Drawing.Point(3, 226);
+            this.ditherBtn2x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ditherBtn2x2.Location = new System.Drawing.Point(3, 267);
             this.ditherBtn2x2.Name = "ditherBtn2x2";
-            this.ditherBtn2x2.Size = new System.Drawing.Size(380, 41);
+            this.ditherBtn2x2.Size = new System.Drawing.Size(258, 41);
             this.ditherBtn2x2.TabIndex = 3;
             this.ditherBtn2x2.Text = "2x2";
             this.ditherBtn2x2.UseVisualStyleBackColor = true;
@@ -1051,9 +765,10 @@
             // ditherBtn4x4
             // 
             this.ditherBtn4x4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherBtn4x4.Location = new System.Drawing.Point(3, 273);
+            this.ditherBtn4x4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ditherBtn4x4.Location = new System.Drawing.Point(3, 314);
             this.ditherBtn4x4.Name = "ditherBtn4x4";
-            this.ditherBtn4x4.Size = new System.Drawing.Size(380, 42);
+            this.ditherBtn4x4.Size = new System.Drawing.Size(258, 42);
             this.ditherBtn4x4.TabIndex = 4;
             this.ditherBtn4x4.Text = "4x4";
             this.ditherBtn4x4.UseVisualStyleBackColor = true;
@@ -1063,9 +778,9 @@
             // 
             this.panel2.Controls.Add(this.dither4x4Panel);
             this.panel2.Controls.Add(this.dither2x2Panel);
-            this.panel2.Location = new System.Drawing.Point(3, 354);
+            this.panel2.Location = new System.Drawing.Point(3, 395);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 173);
+            this.panel2.Size = new System.Drawing.Size(258, 173);
             this.panel2.TabIndex = 6;
             // 
             // dither4x4Panel
@@ -1091,6 +806,7 @@
             this.dither4x4Panel.Controls.Add(this.dither4x4_2x3, 3, 2);
             this.dither4x4Panel.Controls.Add(this.dither4x4_3x3, 3, 3);
             this.dither4x4Panel.Controls.Add(this.dither4x4_3x2, 2, 3);
+            this.dither4x4Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dither4x4Panel.Location = new System.Drawing.Point(0, 0);
             this.dither4x4Panel.Name = "dither4x4Panel";
             this.dither4x4Panel.RowCount = 4;
@@ -1098,12 +814,13 @@
             this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
             this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
             this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
-            this.dither4x4Panel.Size = new System.Drawing.Size(383, 170);
+            this.dither4x4Panel.Size = new System.Drawing.Size(258, 173);
             this.dither4x4Panel.TabIndex = 6;
             this.dither4x4Panel.Visible = false;
             // 
             // dither4x4_0x0
             // 
+            this.dither4x4_0x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dither4x4_0x0.Location = new System.Drawing.Point(3, 3);
             this.dither4x4_0x0.Maximum = new decimal(new int[] {
             15,
@@ -1111,19 +828,20 @@
             0,
             0});
             this.dither4x4_0x0.Name = "dither4x4_0x0";
-            this.dither4x4_0x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_0x0.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_0x0.TabIndex = 0;
             // 
             // dither4x4_0x1
             // 
-            this.dither4x4_0x1.Location = new System.Drawing.Point(98, 3);
+            this.dither4x4_0x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_0x1.Location = new System.Drawing.Point(67, 3);
             this.dither4x4_0x1.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_0x1.Name = "dither4x4_0x1";
-            this.dither4x4_0x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_0x1.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_0x1.TabIndex = 1;
             this.dither4x4_0x1.Value = new decimal(new int[] {
             12,
@@ -1133,14 +851,15 @@
             // 
             // dither4x4_1x0
             // 
-            this.dither4x4_1x0.Location = new System.Drawing.Point(3, 45);
+            this.dither4x4_1x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_1x0.Location = new System.Drawing.Point(3, 46);
             this.dither4x4_1x0.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_1x0.Name = "dither4x4_1x0";
-            this.dither4x4_1x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_1x0.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_1x0.TabIndex = 2;
             this.dither4x4_1x0.Value = new decimal(new int[] {
             8,
@@ -1150,14 +869,15 @@
             // 
             // dither4x4_2x0
             // 
-            this.dither4x4_2x0.Location = new System.Drawing.Point(3, 87);
+            this.dither4x4_2x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_2x0.Location = new System.Drawing.Point(3, 89);
             this.dither4x4_2x0.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_2x0.Name = "dither4x4_2x0";
-            this.dither4x4_2x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_2x0.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_2x0.TabIndex = 3;
             this.dither4x4_2x0.Value = new decimal(new int[] {
             2,
@@ -1167,14 +887,15 @@
             // 
             // dither4x4_1x1
             // 
-            this.dither4x4_1x1.Location = new System.Drawing.Point(98, 45);
+            this.dither4x4_1x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_1x1.Location = new System.Drawing.Point(67, 46);
             this.dither4x4_1x1.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_1x1.Name = "dither4x4_1x1";
-            this.dither4x4_1x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_1x1.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_1x1.TabIndex = 4;
             this.dither4x4_1x1.Value = new decimal(new int[] {
             4,
@@ -1184,14 +905,15 @@
             // 
             // dither4x4_3x0
             // 
-            this.dither4x4_3x0.Location = new System.Drawing.Point(3, 129);
+            this.dither4x4_3x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_3x0.Location = new System.Drawing.Point(3, 132);
             this.dither4x4_3x0.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_3x0.Name = "dither4x4_3x0";
-            this.dither4x4_3x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_3x0.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_3x0.TabIndex = 5;
             this.dither4x4_3x0.Value = new decimal(new int[] {
             10,
@@ -1201,14 +923,15 @@
             // 
             // dither4x4_2x1
             // 
-            this.dither4x4_2x1.Location = new System.Drawing.Point(98, 87);
+            this.dither4x4_2x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_2x1.Location = new System.Drawing.Point(67, 89);
             this.dither4x4_2x1.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_2x1.Name = "dither4x4_2x1";
-            this.dither4x4_2x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_2x1.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_2x1.TabIndex = 6;
             this.dither4x4_2x1.Value = new decimal(new int[] {
             14,
@@ -1218,14 +941,15 @@
             // 
             // dither4x4_3x1
             // 
-            this.dither4x4_3x1.Location = new System.Drawing.Point(98, 129);
+            this.dither4x4_3x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_3x1.Location = new System.Drawing.Point(67, 132);
             this.dither4x4_3x1.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_3x1.Name = "dither4x4_3x1";
-            this.dither4x4_3x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_3x1.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_3x1.TabIndex = 7;
             this.dither4x4_3x1.Value = new decimal(new int[] {
             6,
@@ -1235,14 +959,15 @@
             // 
             // dither4x4_2x2
             // 
-            this.dither4x4_2x2.Location = new System.Drawing.Point(193, 87);
+            this.dither4x4_2x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_2x2.Location = new System.Drawing.Point(131, 89);
             this.dither4x4_2x2.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_2x2.Name = "dither4x4_2x2";
-            this.dither4x4_2x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_2x2.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_2x2.TabIndex = 8;
             this.dither4x4_2x2.Value = new decimal(new int[] {
             1,
@@ -1252,14 +977,15 @@
             // 
             // dither4x4_1x2
             // 
-            this.dither4x4_1x2.Location = new System.Drawing.Point(193, 45);
+            this.dither4x4_1x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_1x2.Location = new System.Drawing.Point(131, 46);
             this.dither4x4_1x2.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_1x2.Name = "dither4x4_1x2";
-            this.dither4x4_1x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_1x2.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_1x2.TabIndex = 9;
             this.dither4x4_1x2.Value = new decimal(new int[] {
             11,
@@ -1269,14 +995,15 @@
             // 
             // dither4x4_0x2
             // 
-            this.dither4x4_0x2.Location = new System.Drawing.Point(193, 3);
+            this.dither4x4_0x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_0x2.Location = new System.Drawing.Point(131, 3);
             this.dither4x4_0x2.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_0x2.Name = "dither4x4_0x2";
-            this.dither4x4_0x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_0x2.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_0x2.TabIndex = 10;
             this.dither4x4_0x2.Value = new decimal(new int[] {
             3,
@@ -1286,14 +1013,15 @@
             // 
             // dither4x4_0x3
             // 
-            this.dither4x4_0x3.Location = new System.Drawing.Point(288, 3);
+            this.dither4x4_0x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_0x3.Location = new System.Drawing.Point(195, 3);
             this.dither4x4_0x3.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_0x3.Name = "dither4x4_0x3";
-            this.dither4x4_0x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_0x3.Size = new System.Drawing.Size(60, 26);
             this.dither4x4_0x3.TabIndex = 11;
             this.dither4x4_0x3.Value = new decimal(new int[] {
             15,
@@ -1303,14 +1031,15 @@
             // 
             // dither4x4_1x3
             // 
-            this.dither4x4_1x3.Location = new System.Drawing.Point(288, 45);
+            this.dither4x4_1x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_1x3.Location = new System.Drawing.Point(195, 46);
             this.dither4x4_1x3.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_1x3.Name = "dither4x4_1x3";
-            this.dither4x4_1x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_1x3.Size = new System.Drawing.Size(60, 26);
             this.dither4x4_1x3.TabIndex = 12;
             this.dither4x4_1x3.Value = new decimal(new int[] {
             7,
@@ -1320,14 +1049,15 @@
             // 
             // dither4x4_2x3
             // 
-            this.dither4x4_2x3.Location = new System.Drawing.Point(288, 87);
+            this.dither4x4_2x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_2x3.Location = new System.Drawing.Point(195, 89);
             this.dither4x4_2x3.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_2x3.Name = "dither4x4_2x3";
-            this.dither4x4_2x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_2x3.Size = new System.Drawing.Size(60, 26);
             this.dither4x4_2x3.TabIndex = 13;
             this.dither4x4_2x3.Value = new decimal(new int[] {
             13,
@@ -1337,14 +1067,15 @@
             // 
             // dither4x4_3x3
             // 
-            this.dither4x4_3x3.Location = new System.Drawing.Point(288, 129);
+            this.dither4x4_3x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_3x3.Location = new System.Drawing.Point(195, 132);
             this.dither4x4_3x3.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_3x3.Name = "dither4x4_3x3";
-            this.dither4x4_3x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_3x3.Size = new System.Drawing.Size(60, 26);
             this.dither4x4_3x3.TabIndex = 14;
             this.dither4x4_3x3.Value = new decimal(new int[] {
             5,
@@ -1354,14 +1085,15 @@
             // 
             // dither4x4_3x2
             // 
-            this.dither4x4_3x2.Location = new System.Drawing.Point(193, 129);
+            this.dither4x4_3x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither4x4_3x2.Location = new System.Drawing.Point(131, 132);
             this.dither4x4_3x2.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
             this.dither4x4_3x2.Name = "dither4x4_3x2";
-            this.dither4x4_3x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_3x2.Size = new System.Drawing.Size(58, 26);
             this.dither4x4_3x2.TabIndex = 15;
             this.dither4x4_3x2.Value = new decimal(new int[] {
             9,
@@ -1378,31 +1110,34 @@
             this.dither2x2Panel.Controls.Add(this.dither2x2_0x1, 1, 0);
             this.dither2x2Panel.Controls.Add(this.dither2x2_1x0, 0, 1);
             this.dither2x2Panel.Controls.Add(this.dither2x2_1x1, 1, 1);
+            this.dither2x2Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dither2x2Panel.Location = new System.Drawing.Point(0, 0);
             this.dither2x2Panel.Name = "dither2x2Panel";
             this.dither2x2Panel.RowCount = 2;
             this.dither2x2Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.dither2x2Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.dither2x2Panel.Size = new System.Drawing.Size(380, 173);
+            this.dither2x2Panel.Size = new System.Drawing.Size(258, 173);
             this.dither2x2Panel.TabIndex = 5;
             // 
             // dither2x2_0x0
             // 
+            this.dither2x2_0x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dither2x2_0x0.Location = new System.Drawing.Point(3, 3);
             this.dither2x2_0x0.Name = "dither2x2_0x0";
-            this.dither2x2_0x0.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_0x0.Size = new System.Drawing.Size(120, 26);
             this.dither2x2_0x0.TabIndex = 0;
             // 
             // dither2x2_0x1
             // 
-            this.dither2x2_0x1.Location = new System.Drawing.Point(193, 3);
+            this.dither2x2_0x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither2x2_0x1.Location = new System.Drawing.Point(132, 3);
             this.dither2x2_0x1.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
             this.dither2x2_0x1.Name = "dither2x2_0x1";
-            this.dither2x2_0x1.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_0x1.Size = new System.Drawing.Size(120, 26);
             this.dither2x2_0x1.TabIndex = 1;
             this.dither2x2_0x1.Value = new decimal(new int[] {
             3,
@@ -1412,6 +1147,7 @@
             // 
             // dither2x2_1x0
             // 
+            this.dither2x2_1x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dither2x2_1x0.Location = new System.Drawing.Point(3, 89);
             this.dither2x2_1x0.Maximum = new decimal(new int[] {
             3,
@@ -1419,7 +1155,7 @@
             0,
             0});
             this.dither2x2_1x0.Name = "dither2x2_1x0";
-            this.dither2x2_1x0.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_1x0.Size = new System.Drawing.Size(120, 26);
             this.dither2x2_1x0.TabIndex = 2;
             this.dither2x2_1x0.Value = new decimal(new int[] {
             2,
@@ -1429,14 +1165,15 @@
             // 
             // dither2x2_1x1
             // 
-            this.dither2x2_1x1.Location = new System.Drawing.Point(193, 89);
+            this.dither2x2_1x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dither2x2_1x1.Location = new System.Drawing.Point(132, 89);
             this.dither2x2_1x1.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
             this.dither2x2_1x1.Name = "dither2x2_1x1";
-            this.dither2x2_1x1.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_1x1.Size = new System.Drawing.Size(120, 26);
             this.dither2x2_1x1.TabIndex = 3;
             this.dither2x2_1x1.Value = new decimal(new int[] {
             1,
@@ -1451,7 +1188,7 @@
             this.ditherLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ditherLabel.Location = new System.Drawing.Point(3, 0);
             this.ditherLabel.Name = "ditherLabel";
-            this.ditherLabel.Size = new System.Drawing.Size(380, 92);
+            this.ditherLabel.Size = new System.Drawing.Size(258, 113);
             this.ditherLabel.TabIndex = 0;
             this.ditherLabel.Text = "Dither";
             this.ditherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1464,7 +1201,8 @@
             this.quantizePanel.Controls.Add(this.quantizeTrackBar, 0, 1);
             this.quantizePanel.Controls.Add(this.quantizeSave, 0, 3);
             this.quantizePanel.Controls.Add(this.quantizeTrackBarLabel, 0, 2);
-            this.quantizePanel.Location = new System.Drawing.Point(0, -3);
+            this.quantizePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quantizePanel.Location = new System.Drawing.Point(0, 0);
             this.quantizePanel.Name = "quantizePanel";
             this.quantizePanel.RowCount = 5;
             this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.50237F));
@@ -1472,7 +1210,7 @@
             this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 192F));
-            this.quantizePanel.Size = new System.Drawing.Size(386, 538);
+            this.quantizePanel.Size = new System.Drawing.Size(264, 605);
             this.quantizePanel.TabIndex = 5;
             // 
             // quantizeLabel
@@ -1482,19 +1220,19 @@
             this.quantizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantizeLabel.Location = new System.Drawing.Point(3, 0);
             this.quantizeLabel.Name = "quantizeLabel";
-            this.quantizeLabel.Size = new System.Drawing.Size(380, 94);
+            this.quantizeLabel.Size = new System.Drawing.Size(258, 131);
             this.quantizeLabel.TabIndex = 0;
             this.quantizeLabel.Text = "Quantize";
             this.quantizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // quantizeTrackBar
             // 
-            this.quantizeTrackBar.Location = new System.Drawing.Point(3, 97);
+            this.quantizeTrackBar.Location = new System.Drawing.Point(3, 134);
             this.quantizeTrackBar.Maximum = 20;
             this.quantizeTrackBar.Minimum = 2;
             this.quantizeTrackBar.Name = "quantizeTrackBar";
             this.quantizeTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.quantizeTrackBar.Size = new System.Drawing.Size(380, 45);
+            this.quantizeTrackBar.Size = new System.Drawing.Size(258, 45);
             this.quantizeTrackBar.TabIndex = 1;
             this.quantizeTrackBar.Value = 2;
             this.quantizeTrackBar.Scroll += new System.EventHandler(this.quantizeTrackBar_Scroll);
@@ -1502,9 +1240,10 @@
             // quantizeSave
             // 
             this.quantizeSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quantizeSave.Location = new System.Drawing.Point(3, 249);
+            this.quantizeSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantizeSave.Location = new System.Drawing.Point(3, 316);
             this.quantizeSave.Name = "quantizeSave";
-            this.quantizeSave.Size = new System.Drawing.Size(380, 93);
+            this.quantizeSave.Size = new System.Drawing.Size(258, 93);
             this.quantizeSave.TabIndex = 3;
             this.quantizeSave.Text = "Set Filter";
             this.quantizeSave.UseVisualStyleBackColor = true;
@@ -1514,9 +1253,10 @@
             // 
             this.quantizeTrackBarLabel.AutoSize = true;
             this.quantizeTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quantizeTrackBarLabel.Location = new System.Drawing.Point(3, 173);
+            this.quantizeTrackBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantizeTrackBarLabel.Location = new System.Drawing.Point(3, 240);
             this.quantizeTrackBarLabel.Name = "quantizeTrackBarLabel";
-            this.quantizeTrackBarLabel.Size = new System.Drawing.Size(380, 73);
+            this.quantizeTrackBarLabel.Size = new System.Drawing.Size(258, 73);
             this.quantizeTrackBarLabel.TabIndex = 2;
             this.quantizeTrackBarLabel.Text = "2";
             this.quantizeTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1528,14 +1268,15 @@
             this.greyscalePanel.Controls.Add(this.greyscaleLabel, 0, 0);
             this.greyscalePanel.Controls.Add(this.greyscaleBtn, 0, 1);
             this.greyscalePanel.Controls.Add(this.greyscaleSave, 0, 2);
-            this.greyscalePanel.Location = new System.Drawing.Point(0, -3);
+            this.greyscalePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.greyscalePanel.Location = new System.Drawing.Point(0, 0);
             this.greyscalePanel.Name = "greyscalePanel";
             this.greyscalePanel.RowCount = 4;
             this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.39367F));
             this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.60633F));
             this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 273F));
-            this.greyscalePanel.Size = new System.Drawing.Size(386, 552);
+            this.greyscalePanel.Size = new System.Drawing.Size(264, 605);
             this.greyscalePanel.TabIndex = 4;
             // 
             // greyscaleLabel
@@ -1545,7 +1286,7 @@
             this.greyscaleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greyscaleLabel.Location = new System.Drawing.Point(3, 0);
             this.greyscaleLabel.Name = "greyscaleLabel";
-            this.greyscaleLabel.Size = new System.Drawing.Size(380, 107);
+            this.greyscaleLabel.Size = new System.Drawing.Size(258, 136);
             this.greyscaleLabel.TabIndex = 0;
             this.greyscaleLabel.Text = "Greyscale";
             this.greyscaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1553,9 +1294,10 @@
             // greyscaleBtn
             // 
             this.greyscaleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.greyscaleBtn.Location = new System.Drawing.Point(3, 110);
+            this.greyscaleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greyscaleBtn.Location = new System.Drawing.Point(3, 139);
             this.greyscaleBtn.Name = "greyscaleBtn";
-            this.greyscaleBtn.Size = new System.Drawing.Size(380, 88);
+            this.greyscaleBtn.Size = new System.Drawing.Size(258, 112);
             this.greyscaleBtn.TabIndex = 1;
             this.greyscaleBtn.Text = "Apply Greyscale";
             this.greyscaleBtn.UseVisualStyleBackColor = true;
@@ -1564,13 +1306,334 @@
             // greyscaleSave
             // 
             this.greyscaleSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.greyscaleSave.Location = new System.Drawing.Point(3, 204);
+            this.greyscaleSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greyscaleSave.Location = new System.Drawing.Point(3, 257);
             this.greyscaleSave.Name = "greyscaleSave";
-            this.greyscaleSave.Size = new System.Drawing.Size(380, 71);
+            this.greyscaleSave.Size = new System.Drawing.Size(258, 71);
             this.greyscaleSave.TabIndex = 2;
             this.greyscaleSave.Text = "Set Filter";
             this.greyscaleSave.UseVisualStyleBackColor = true;
             this.greyscaleSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // brightnessPanel
+            // 
+            this.brightnessPanel.ColumnCount = 1;
+            this.brightnessPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.brightnessPanel.Controls.Add(this.brightnessTrackBar, 0, 1);
+            this.brightnessPanel.Controls.Add(this.brightnessSave, 0, 3);
+            this.brightnessPanel.Controls.Add(this.brightnessTrackBarLabel, 0, 2);
+            this.brightnessPanel.Controls.Add(this.brightnessLabel, 0, 0);
+            this.brightnessPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.brightnessPanel.Location = new System.Drawing.Point(0, 0);
+            this.brightnessPanel.Name = "brightnessPanel";
+            this.brightnessPanel.RowCount = 7;
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.brightnessPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.brightnessPanel.Size = new System.Drawing.Size(264, 605);
+            this.brightnessPanel.TabIndex = 0;
+            // 
+            // brightnessTrackBar
+            // 
+            this.brightnessTrackBar.BackColor = System.Drawing.SystemColors.Control;
+            this.brightnessTrackBar.Location = new System.Drawing.Point(3, 89);
+            this.brightnessTrackBar.Maximum = 255;
+            this.brightnessTrackBar.Minimum = -255;
+            this.brightnessTrackBar.Name = "brightnessTrackBar";
+            this.brightnessTrackBar.Size = new System.Drawing.Size(258, 45);
+            this.brightnessTrackBar.TabIndex = 0;
+            this.brightnessTrackBar.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // brightnessSave
+            // 
+            this.brightnessSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brightnessSave.Location = new System.Drawing.Point(3, 261);
+            this.brightnessSave.Name = "brightnessSave";
+            this.brightnessSave.Size = new System.Drawing.Size(258, 75);
+            this.brightnessSave.TabIndex = 0;
+            this.brightnessSave.Text = "Set Filter";
+            this.brightnessSave.UseVisualStyleBackColor = true;
+            this.brightnessSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // brightnessTrackBarLabel
+            // 
+            this.brightnessTrackBarLabel.AutoSize = true;
+            this.brightnessTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.brightnessTrackBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brightnessTrackBarLabel.Location = new System.Drawing.Point(3, 172);
+            this.brightnessTrackBarLabel.Name = "brightnessTrackBarLabel";
+            this.brightnessTrackBarLabel.Size = new System.Drawing.Size(258, 86);
+            this.brightnessTrackBarLabel.TabIndex = 1;
+            this.brightnessTrackBarLabel.Text = "0";
+            this.brightnessTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // brightnessLabel
+            // 
+            this.brightnessLabel.AutoSize = true;
+            this.brightnessLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.brightnessLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brightnessLabel.Location = new System.Drawing.Point(3, 0);
+            this.brightnessLabel.Name = "brightnessLabel";
+            this.brightnessLabel.Size = new System.Drawing.Size(258, 86);
+            this.brightnessLabel.TabIndex = 2;
+            this.brightnessLabel.Text = "Brightness";
+            this.brightnessLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contrastPanel
+            // 
+            this.contrastPanel.ColumnCount = 1;
+            this.contrastPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.contrastPanel.Controls.Add(this.contrastLabel, 0, 0);
+            this.contrastPanel.Controls.Add(this.contrastTrackbar, 0, 1);
+            this.contrastPanel.Controls.Add(this.contrastTrackBarLabel, 0, 2);
+            this.contrastPanel.Controls.Add(this.contrastSave, 0, 3);
+            this.contrastPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contrastPanel.Location = new System.Drawing.Point(0, 0);
+            this.contrastPanel.Name = "contrastPanel";
+            this.contrastPanel.RowCount = 5;
+            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.39378F));
+            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.60622F));
+            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.contrastPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 319F));
+            this.contrastPanel.Size = new System.Drawing.Size(264, 605);
+            this.contrastPanel.TabIndex = 3;
+            // 
+            // contrastLabel
+            // 
+            this.contrastLabel.AutoSize = true;
+            this.contrastLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contrastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contrastLabel.Location = new System.Drawing.Point(3, 0);
+            this.contrastLabel.Name = "contrastLabel";
+            this.contrastLabel.Size = new System.Drawing.Size(258, 116);
+            this.contrastLabel.TabIndex = 0;
+            this.contrastLabel.Text = "Contrast";
+            this.contrastLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contrastTrackbar
+            // 
+            this.contrastTrackbar.Location = new System.Drawing.Point(3, 119);
+            this.contrastTrackbar.Maximum = 100;
+            this.contrastTrackbar.Minimum = -100;
+            this.contrastTrackbar.Name = "contrastTrackbar";
+            this.contrastTrackbar.Size = new System.Drawing.Size(258, 45);
+            this.contrastTrackbar.TabIndex = 1;
+            this.contrastTrackbar.Scroll += new System.EventHandler(this.contrastTrackbar_Scroll);
+            // 
+            // contrastTrackBarLabel
+            // 
+            this.contrastTrackBarLabel.AutoSize = true;
+            this.contrastTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contrastTrackBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contrastTrackBarLabel.Location = new System.Drawing.Point(3, 169);
+            this.contrastTrackBarLabel.Name = "contrastTrackBarLabel";
+            this.contrastTrackBarLabel.Size = new System.Drawing.Size(258, 37);
+            this.contrastTrackBarLabel.TabIndex = 2;
+            this.contrastTrackBarLabel.Text = "0";
+            this.contrastTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contrastSave
+            // 
+            this.contrastSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contrastSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contrastSave.Location = new System.Drawing.Point(3, 209);
+            this.contrastSave.Name = "contrastSave";
+            this.contrastSave.Size = new System.Drawing.Size(258, 73);
+            this.contrastSave.TabIndex = 3;
+            this.contrastSave.Text = "Set Filter";
+            this.contrastSave.UseVisualStyleBackColor = true;
+            this.contrastSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // invertPanel
+            // 
+            this.invertPanel.ColumnCount = 1;
+            this.invertPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.invertPanel.Controls.Add(this.invertLabel, 0, 0);
+            this.invertPanel.Controls.Add(this.invertBtn, 0, 3);
+            this.invertPanel.Controls.Add(this.invertTrackBar, 0, 1);
+            this.invertPanel.Controls.Add(this.invertTrackBarLabel, 0, 2);
+            this.invertPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.invertPanel.Location = new System.Drawing.Point(0, 0);
+            this.invertPanel.Name = "invertPanel";
+            this.invertPanel.RowCount = 4;
+            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.78862F));
+            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.21138F));
+            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.invertPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 351F));
+            this.invertPanel.Size = new System.Drawing.Size(264, 605);
+            this.invertPanel.TabIndex = 1;
+            this.invertPanel.Visible = false;
+            // 
+            // invertLabel
+            // 
+            this.invertLabel.AutoSize = true;
+            this.invertLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.invertLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invertLabel.Location = new System.Drawing.Point(3, 0);
+            this.invertLabel.Name = "invertLabel";
+            this.invertLabel.Size = new System.Drawing.Size(258, 128);
+            this.invertLabel.TabIndex = 2;
+            this.invertLabel.Text = "Invert";
+            this.invertLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // invertBtn
+            // 
+            this.invertBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invertBtn.Location = new System.Drawing.Point(3, 256);
+            this.invertBtn.Name = "invertBtn";
+            this.invertBtn.Size = new System.Drawing.Size(258, 78);
+            this.invertBtn.TabIndex = 0;
+            this.invertBtn.Text = "Set Filter";
+            this.invertBtn.UseVisualStyleBackColor = true;
+            this.invertBtn.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // invertTrackBar
+            // 
+            this.invertTrackBar.Location = new System.Drawing.Point(3, 131);
+            this.invertTrackBar.Maximum = 255;
+            this.invertTrackBar.Name = "invertTrackBar";
+            this.invertTrackBar.Size = new System.Drawing.Size(258, 45);
+            this.invertTrackBar.TabIndex = 1;
+            this.invertTrackBar.Value = 1;
+            this.invertTrackBar.Scroll += new System.EventHandler(this.invertTrackBar_Scroll);
+            // 
+            // invertTrackBarLabel
+            // 
+            this.invertTrackBarLabel.AutoSize = true;
+            this.invertTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.invertTrackBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invertTrackBarLabel.Location = new System.Drawing.Point(3, 207);
+            this.invertTrackBarLabel.Name = "invertTrackBarLabel";
+            this.invertTrackBarLabel.Size = new System.Drawing.Size(258, 46);
+            this.invertTrackBarLabel.TabIndex = 3;
+            this.invertTrackBarLabel.Text = "0";
+            this.invertTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // noisePanel
+            // 
+            this.noisePanel.ColumnCount = 1;
+            this.noisePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.noisePanel.Controls.Add(this.noiseLabel, 0, 0);
+            this.noisePanel.Controls.Add(this.noiseTrackBar, 0, 1);
+            this.noisePanel.Controls.Add(this.noiseTrackbarLabel, 0, 2);
+            this.noisePanel.Controls.Add(this.noiseSave, 0, 3);
+            this.noisePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noisePanel.Location = new System.Drawing.Point(0, 0);
+            this.noisePanel.Name = "noisePanel";
+            this.noisePanel.RowCount = 5;
+            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.68421F));
+            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.31579F));
+            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.noisePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 269F));
+            this.noisePanel.Size = new System.Drawing.Size(264, 605);
+            this.noisePanel.TabIndex = 2;
+            // 
+            // noiseLabel
+            // 
+            this.noiseLabel.AutoSize = true;
+            this.noiseLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noiseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noiseLabel.Location = new System.Drawing.Point(3, 0);
+            this.noiseLabel.Name = "noiseLabel";
+            this.noiseLabel.Size = new System.Drawing.Size(258, 85);
+            this.noiseLabel.TabIndex = 0;
+            this.noiseLabel.Text = "Noise";
+            this.noiseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // noiseTrackBar
+            // 
+            this.noiseTrackBar.Location = new System.Drawing.Point(3, 88);
+            this.noiseTrackBar.Maximum = 255;
+            this.noiseTrackBar.Minimum = 1;
+            this.noiseTrackBar.Name = "noiseTrackBar";
+            this.noiseTrackBar.Size = new System.Drawing.Size(258, 45);
+            this.noiseTrackBar.TabIndex = 1;
+            this.noiseTrackBar.Value = 1;
+            this.noiseTrackBar.Scroll += new System.EventHandler(this.noiseTrackBar_Scroll);
+            // 
+            // noiseTrackbarLabel
+            // 
+            this.noiseTrackbarLabel.AutoSize = true;
+            this.noiseTrackbarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noiseTrackbarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noiseTrackbarLabel.Location = new System.Drawing.Point(3, 174);
+            this.noiseTrackbarLabel.Name = "noiseTrackbarLabel";
+            this.noiseTrackbarLabel.Size = new System.Drawing.Size(258, 73);
+            this.noiseTrackbarLabel.TabIndex = 2;
+            this.noiseTrackbarLabel.Text = "0";
+            this.noiseTrackbarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // noiseSave
+            // 
+            this.noiseSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noiseSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noiseSave.Location = new System.Drawing.Point(3, 250);
+            this.noiseSave.Name = "noiseSave";
+            this.noiseSave.Size = new System.Drawing.Size(258, 82);
+            this.noiseSave.TabIndex = 3;
+            this.noiseSave.Text = "Set Filter";
+            this.noiseSave.UseVisualStyleBackColor = true;
+            this.noiseSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // procgenPanel
+            // 
+            this.procgenPanel.ColumnCount = 1;
+            this.procgenPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.procgenPanel.Controls.Add(this.procgenLabel, 0, 0);
+            this.procgenPanel.Controls.Add(this.procgenLandBtn, 0, 1);
+            this.procgenPanel.Controls.Add(this.procgenSky, 0, 2);
+            this.procgenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenPanel.Location = new System.Drawing.Point(0, 0);
+            this.procgenPanel.Name = "procgenPanel";
+            this.procgenPanel.RowCount = 4;
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.24324F));
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.75676F));
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.procgenPanel.Size = new System.Drawing.Size(264, 605);
+            this.procgenPanel.TabIndex = 8;
+            // 
+            // procgenLabel
+            // 
+            this.procgenLabel.AutoSize = true;
+            this.procgenLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.procgenLabel.Location = new System.Drawing.Point(3, 0);
+            this.procgenLabel.Name = "procgenLabel";
+            this.procgenLabel.Size = new System.Drawing.Size(258, 110);
+            this.procgenLabel.TabIndex = 0;
+            this.procgenLabel.Text = "Procedural Generation";
+            this.procgenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // procgenLandBtn
+            // 
+            this.procgenLandBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenLandBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.procgenLandBtn.Location = new System.Drawing.Point(3, 113);
+            this.procgenLandBtn.Name = "procgenLandBtn";
+            this.procgenLandBtn.Size = new System.Drawing.Size(258, 139);
+            this.procgenLandBtn.TabIndex = 1;
+            this.procgenLandBtn.Text = "Generate Land";
+            this.procgenLandBtn.UseVisualStyleBackColor = true;
+            this.procgenLandBtn.Click += new System.EventHandler(this.procgenLandBtn_Click);
+            // 
+            // procgenSky
+            // 
+            this.procgenSky.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenSky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.procgenSky.Location = new System.Drawing.Point(3, 258);
+            this.procgenSky.Name = "procgenSky";
+            this.procgenSky.Size = new System.Drawing.Size(258, 93);
+            this.procgenSky.TabIndex = 2;
+            this.procgenSky.Text = "Generate Sky";
+            this.procgenSky.UseVisualStyleBackColor = true;
+            this.procgenSky.Click += new System.EventHandler(this.procgenSky_Click);
             // 
             // bottomInfoPanel
             // 
@@ -1586,16 +1649,17 @@
             this.bottomInfoPanel.Name = "bottomInfoPanel";
             this.bottomInfoPanel.RowCount = 1;
             this.bottomInfoPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.bottomInfoPanel.Size = new System.Drawing.Size(1331, 25);
+            this.bottomInfoPanel.Size = new System.Drawing.Size(912, 25);
             this.bottomInfoPanel.TabIndex = 3;
             // 
             // coordsLabel
             // 
             this.coordsLabel.AutoSize = true;
             this.coordsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.coordsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coordsLabel.Location = new System.Drawing.Point(3, 0);
             this.coordsLabel.Name = "coordsLabel";
-            this.coordsLabel.Size = new System.Drawing.Size(327, 25);
+            this.coordsLabel.Size = new System.Drawing.Size(118, 25);
             this.coordsLabel.TabIndex = 0;
             this.coordsLabel.Text = "X: , Y:";
             this.coordsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1604,9 +1668,10 @@
             // 
             this.zoomLabel.AutoSize = true;
             this.zoomLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zoomLabel.Location = new System.Drawing.Point(336, 0);
+            this.zoomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zoomLabel.Location = new System.Drawing.Point(127, 0);
             this.zoomLabel.Name = "zoomLabel";
-            this.zoomLabel.Size = new System.Drawing.Size(327, 25);
+            this.zoomLabel.Size = new System.Drawing.Size(118, 25);
             this.zoomLabel.TabIndex = 1;
             this.zoomLabel.Text = "Zoom: 1";
             this.zoomLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1614,15 +1679,15 @@
             // topToolbarPanel
             // 
             this.topToolbarPanel.ColumnCount = 10;
-            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 340F));
-            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.topToolbarPanel.Controls.Add(this.colorBtn, 0, 0);
             this.topToolbarPanel.Controls.Add(this.thicknessTrackBar, 1, 0);
@@ -1638,15 +1703,16 @@
             this.topToolbarPanel.Name = "topToolbarPanel";
             this.topToolbarPanel.RowCount = 1;
             this.topToolbarPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.topToolbarPanel.Size = new System.Drawing.Size(1331, 39);
+            this.topToolbarPanel.Size = new System.Drawing.Size(912, 39);
             this.topToolbarPanel.TabIndex = 2;
             // 
             // colorBtn
             // 
             this.colorBtn.BackColor = System.Drawing.Color.Black;
-            this.colorBtn.Location = new System.Drawing.Point(59, 3);
+            this.colorBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorBtn.Location = new System.Drawing.Point(63, 3);
             this.colorBtn.Name = "colorBtn";
-            this.colorBtn.Size = new System.Drawing.Size(91, 33);
+            this.colorBtn.Size = new System.Drawing.Size(94, 33);
             this.colorBtn.TabIndex = 0;
             this.colorBtn.UseVisualStyleBackColor = false;
             this.colorBtn.Click += new System.EventHandler(this.colorBtn_Click);
@@ -1654,11 +1720,11 @@
             // thicknessTrackBar
             // 
             this.thicknessTrackBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.thicknessTrackBar.Location = new System.Drawing.Point(259, 3);
+            this.thicknessTrackBar.Location = new System.Drawing.Point(263, 3);
             this.thicknessTrackBar.Maximum = 30;
             this.thicknessTrackBar.Minimum = 1;
             this.thicknessTrackBar.Name = "thicknessTrackBar";
-            this.thicknessTrackBar.Size = new System.Drawing.Size(334, 33);
+            this.thicknessTrackBar.Size = new System.Drawing.Size(144, 33);
             this.thicknessTrackBar.TabIndex = 1;
             this.thicknessTrackBar.Value = 1;
             this.thicknessTrackBar.Scroll += new System.EventHandler(this.trackBar2_Scroll);
@@ -1667,7 +1733,7 @@
             // 
             this.lineBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineBtn.Location = new System.Drawing.Point(703, 3);
+            this.lineBtn.Location = new System.Drawing.Point(513, 3);
             this.lineBtn.Name = "lineBtn";
             this.lineBtn.Size = new System.Drawing.Size(94, 33);
             this.lineBtn.TabIndex = 4;
@@ -1680,9 +1746,9 @@
             this.penBtn.BackColor = System.Drawing.Color.White;
             this.penBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.penBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.penBtn.Location = new System.Drawing.Point(599, 3);
+            this.penBtn.Location = new System.Drawing.Point(413, 3);
             this.penBtn.Name = "penBtn";
-            this.penBtn.Size = new System.Drawing.Size(98, 33);
+            this.penBtn.Size = new System.Drawing.Size(94, 33);
             this.penBtn.TabIndex = 5;
             this.penBtn.Text = "Pen";
             this.penBtn.UseVisualStyleBackColor = false;
@@ -1692,9 +1758,9 @@
             // 
             this.ellipseBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ellipseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ellipseBtn.Location = new System.Drawing.Point(900, 3);
+            this.ellipseBtn.Location = new System.Drawing.Point(713, 3);
             this.ellipseBtn.Name = "ellipseBtn";
-            this.ellipseBtn.Size = new System.Drawing.Size(90, 33);
+            this.ellipseBtn.Size = new System.Drawing.Size(94, 33);
             this.ellipseBtn.TabIndex = 3;
             this.ellipseBtn.Text = "Ellipse";
             this.ellipseBtn.UseVisualStyleBackColor = true;
@@ -1704,9 +1770,9 @@
             // 
             this.rectangleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rectangleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rectangleBtn.Location = new System.Drawing.Point(803, 3);
+            this.rectangleBtn.Location = new System.Drawing.Point(613, 3);
             this.rectangleBtn.Name = "rectangleBtn";
-            this.rectangleBtn.Size = new System.Drawing.Size(91, 33);
+            this.rectangleBtn.Size = new System.Drawing.Size(94, 33);
             this.rectangleBtn.TabIndex = 2;
             this.rectangleBtn.Text = "Rectangle";
             this.rectangleBtn.UseVisualStyleBackColor = true;
@@ -1716,9 +1782,9 @@
             // 
             this.bucketBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bucketBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bucketBtn.Location = new System.Drawing.Point(996, 3);
+            this.bucketBtn.Location = new System.Drawing.Point(813, 3);
             this.bucketBtn.Name = "bucketBtn";
-            this.bucketBtn.Size = new System.Drawing.Size(98, 33);
+            this.bucketBtn.Size = new System.Drawing.Size(94, 33);
             this.bucketBtn.TabIndex = 8;
             this.bucketBtn.Text = "Bucket";
             this.bucketBtn.UseVisualStyleBackColor = true;
@@ -1731,7 +1797,7 @@
             this.colourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colourLabel.Location = new System.Drawing.Point(3, 0);
             this.colourLabel.Name = "colourLabel";
-            this.colourLabel.Size = new System.Drawing.Size(50, 39);
+            this.colourLabel.Size = new System.Drawing.Size(54, 39);
             this.colourLabel.TabIndex = 9;
             this.colourLabel.Text = "Color:";
             this.colourLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1741,7 +1807,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(159, 0);
+            this.label1.Location = new System.Drawing.Point(163, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 39);
             this.label1.TabIndex = 10;
@@ -1767,13 +1833,13 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.859756F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.14024F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1337, 687);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(918, 687);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1337, 711);
+            this.ClientSize = new System.Drawing.Size(918, 711);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -1787,20 +1853,6 @@
             this.splitContainer1.ResumeLayout(false);
             this.pictureBoxPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
-            this.brightnessPanel.ResumeLayout(false);
-            this.brightnessPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).EndInit();
-            this.contrastPanel.ResumeLayout(false);
-            this.contrastPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).EndInit();
-            this.invertPanel.ResumeLayout(false);
-            this.invertPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).EndInit();
-            this.noisePanel.ResumeLayout(false);
-            this.noisePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).EndInit();
-            this.procgenPanel.ResumeLayout(false);
-            this.procgenPanel.PerformLayout();
             this.convolutionPanel.ResumeLayout(false);
             this.convolutionPanel.PerformLayout();
             this.convolutionMatrixPanel.ResumeLayout(false);
@@ -1844,6 +1896,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.quantizeTrackBar)).EndInit();
             this.greyscalePanel.ResumeLayout(false);
             this.greyscalePanel.PerformLayout();
+            this.brightnessPanel.ResumeLayout(false);
+            this.brightnessPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).EndInit();
+            this.contrastPanel.ResumeLayout(false);
+            this.contrastPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).EndInit();
+            this.invertPanel.ResumeLayout(false);
+            this.invertPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).EndInit();
+            this.noisePanel.ResumeLayout(false);
+            this.noisePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).EndInit();
+            this.procgenPanel.ResumeLayout(false);
+            this.procgenPanel.PerformLayout();
             this.bottomInfoPanel.ResumeLayout(false);
             this.bottomInfoPanel.PerformLayout();
             this.topToolbarPanel.ResumeLayout(false);
