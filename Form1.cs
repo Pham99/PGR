@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PaintShop
@@ -40,7 +34,7 @@ namespace PaintShop
             pictureBox.MouseWheel += panel1_MouseWheel;
 
             pictureBox.Image = new Bitmap(600, 400, PixelFormat.Format24bppRgb);
-            using ( Graphics g = Graphics.FromImage(pictureBox.Image))
+            using (Graphics g = Graphics.FromImage(pictureBox.Image))
             {
                 g.Clear(Color.White);
             }
@@ -258,7 +252,7 @@ namespace PaintShop
             if (pictureBox.Image != null)
             {
                 pictureBox.Image = filters.IncreaseBrightness2(brightnessTrackBar.Value, tempImage);
-            }   
+            }
             else
             {
                 MessageBox.Show("No image to save.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -299,7 +293,7 @@ namespace PaintShop
 
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
-            thickness = trackBar2.Value;
+            thickness = thicknessTrackBar.Value;
         }
 
         private void rectangleBtn_Click(object sender, EventArgs e)
@@ -320,11 +314,6 @@ namespace PaintShop
         private void penBtn_Click(object sender, EventArgs e)
         {
             tool = SelectedDrawingTool.Pen;
-        }
-
-        private void polygonBtn_Click(object sender, EventArgs e)
-        {
-            tool = SelectedDrawingTool.Polygon;
         }
 
         private void noiseTrackBar_Scroll(object sender, EventArgs e)
@@ -421,11 +410,11 @@ namespace PaintShop
             byte[,] matrix;
             if (dither2x2Panel.Visible == true)
             {
-                matrix = new byte[,] { {(byte)dither2x2_0x0.Value, (byte)dither2x2_0x1.Value }, {(byte)dither2x2_1x0.Value, (byte)dither2x2_1x1.Value } };
+                matrix = new byte[,] { { (byte)dither2x2_0x0.Value, (byte)dither2x2_0x1.Value }, { (byte)dither2x2_1x0.Value, (byte)dither2x2_1x1.Value } };
             }
-            else if (dither4x4Panel.Visible == true) 
+            else if (dither4x4Panel.Visible == true)
             {
-                matrix = new byte[,] { { (byte)dither4x4_0x0.Value, (byte)dither4x4_0x1.Value, (byte)dither4x4_0x2.Value, (byte)dither4x4_0x3.Value }, 
+                matrix = new byte[,] { { (byte)dither4x4_0x0.Value, (byte)dither4x4_0x1.Value, (byte)dither4x4_0x2.Value, (byte)dither4x4_0x3.Value },
                                                { (byte)dither4x4_1x0.Value, (byte)dither4x4_1x1.Value, (byte)dither4x4_1x2.Value, (byte)dither4x4_1x3.Value },
                                                { (byte)dither4x4_2x0.Value, (byte)dither4x4_2x1.Value, (byte)dither4x4_2x2.Value, (byte)dither4x4_2x3.Value },
                                                { (byte)dither4x4_3x0.Value, (byte)dither4x4_3x1.Value, (byte)dither4x4_3x2.Value, (byte)dither4x4_3x3.Value } };

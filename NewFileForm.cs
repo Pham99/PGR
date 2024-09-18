@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PaintShop
@@ -14,7 +7,7 @@ namespace PaintShop
     {
         public int ImageWidth { get; private set; } = 600;
         public int ImageHeight { get; private set; } = 400;
-        public event Action<int,int> CreateNewFile;
+        public event Action<int, int> CreateNewFile;
         public NewFileForm()
         {
             InitializeComponent();

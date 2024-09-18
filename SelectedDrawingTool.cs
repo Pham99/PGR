@@ -12,7 +12,6 @@ namespace PaintShop
         Rectangle,
         Ellipse,
         Line,
-        Polygon,
         Bucket
     }
 }

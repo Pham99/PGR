@@ -49,8 +49,30 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pictureBoxPanel = new System.Windows.Forms.Panel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.brightnessPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.brightnessTrackBar = new System.Windows.Forms.TrackBar();
+            this.brightnessSave = new System.Windows.Forms.Button();
+            this.brightnessTrackBarLabel = new System.Windows.Forms.Label();
+            this.brightnessLabel = new System.Windows.Forms.Label();
+            this.contrastPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.contrastLabel = new System.Windows.Forms.Label();
+            this.contrastTrackbar = new System.Windows.Forms.TrackBar();
+            this.contrastTrackBarLabel = new System.Windows.Forms.Label();
+            this.contrastSave = new System.Windows.Forms.Button();
+            this.invertPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.invertLabel = new System.Windows.Forms.Label();
+            this.invertBtn = new System.Windows.Forms.Button();
+            this.invertTrackBar = new System.Windows.Forms.TrackBar();
+            this.invertTrackBarLabel = new System.Windows.Forms.Label();
+            this.noisePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.noiseLabel = new System.Windows.Forms.Label();
+            this.noiseTrackBar = new System.Windows.Forms.TrackBar();
+            this.noiseTrackbarLabel = new System.Windows.Forms.Label();
+            this.noiseSave = new System.Windows.Forms.Button();
             this.procgenPanel = new System.Windows.Forms.TableLayoutPanel();
             this.procgenLabel = new System.Windows.Forms.Label();
+            this.procgenLandBtn = new System.Windows.Forms.Button();
+            this.procgenSky = new System.Windows.Forms.Button();
             this.convolutionPanel = new System.Windows.Forms.TableLayoutPanel();
             this.convolutionLabel = new System.Windows.Forms.Label();
             this.convolutionBtn = new System.Windows.Forms.Button();
@@ -66,8 +88,9 @@
             this.convolution2x1 = new System.Windows.Forms.NumericUpDown();
             this.convolution2x2 = new System.Windows.Forms.NumericUpDown();
             this.convolutionNormalize = new System.Windows.Forms.NumericUpDown();
+            this.convolutionLabel2 = new System.Windows.Forms.Label();
+            this.convolutionLabel3 = new System.Windows.Forms.Label();
             this.ditherPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.ditherLabel = new System.Windows.Forms.Label();
             this.ditherBtn = new System.Windows.Forms.Button();
             this.ditherSave = new System.Windows.Forms.Button();
             this.ditherBtn2x2 = new System.Windows.Forms.Button();
@@ -95,55 +118,32 @@
             this.dither2x2_0x1 = new System.Windows.Forms.NumericUpDown();
             this.dither2x2_1x0 = new System.Windows.Forms.NumericUpDown();
             this.dither2x2_1x1 = new System.Windows.Forms.NumericUpDown();
+            this.ditherLabel = new System.Windows.Forms.Label();
             this.quantizePanel = new System.Windows.Forms.TableLayoutPanel();
             this.quantizeLabel = new System.Windows.Forms.Label();
             this.quantizeTrackBar = new System.Windows.Forms.TrackBar();
-            this.quantizeTrackBarLabel = new System.Windows.Forms.Label();
             this.quantizeSave = new System.Windows.Forms.Button();
+            this.quantizeTrackBarLabel = new System.Windows.Forms.Label();
             this.greyscalePanel = new System.Windows.Forms.TableLayoutPanel();
             this.greyscaleLabel = new System.Windows.Forms.Label();
             this.greyscaleBtn = new System.Windows.Forms.Button();
             this.greyscaleSave = new System.Windows.Forms.Button();
-            this.brightnessPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.brightnessTrackBar = new System.Windows.Forms.TrackBar();
-            this.brightnessSave = new System.Windows.Forms.Button();
-            this.brightnessTrackBarLabel = new System.Windows.Forms.Label();
-            this.brightnessLabel = new System.Windows.Forms.Label();
-            this.contrastPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.contrastLabel = new System.Windows.Forms.Label();
-            this.contrastTrackbar = new System.Windows.Forms.TrackBar();
-            this.contrastTrackBarLabel = new System.Windows.Forms.Label();
-            this.contrastSave = new System.Windows.Forms.Button();
-            this.invertPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.invertLabel = new System.Windows.Forms.Label();
-            this.invertBtn = new System.Windows.Forms.Button();
-            this.invertTrackBar = new System.Windows.Forms.TrackBar();
-            this.invertTrackBarLabel = new System.Windows.Forms.Label();
-            this.noisePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.noiseLabel = new System.Windows.Forms.Label();
-            this.noiseTrackBar = new System.Windows.Forms.TrackBar();
-            this.noiseTrackbarLabel = new System.Windows.Forms.Label();
-            this.noiseSave = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.bottomInfoPanel = new System.Windows.Forms.TableLayoutPanel();
             this.coordsLabel = new System.Windows.Forms.Label();
             this.zoomLabel = new System.Windows.Forms.Label();
             this.topToolbarPanel = new System.Windows.Forms.TableLayoutPanel();
             this.colorBtn = new System.Windows.Forms.Button();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.thicknessTrackBar = new System.Windows.Forms.TrackBar();
             this.lineBtn = new System.Windows.Forms.Button();
             this.penBtn = new System.Windows.Forms.Button();
             this.ellipseBtn = new System.Windows.Forms.Button();
             this.rectangleBtn = new System.Windows.Forms.Button();
             this.bucketBtn = new System.Windows.Forms.Button();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.procgenLandBtn = new System.Windows.Forms.Button();
-            this.procgenSky = new System.Windows.Forms.Button();
-            this.convolutionLabel2 = new System.Windows.Forms.Label();
-            this.convolutionLabel3 = new System.Windows.Forms.Label();
             this.colourLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -151,6 +151,14 @@
             this.splitContainer1.SuspendLayout();
             this.pictureBoxPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.brightnessPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).BeginInit();
+            this.contrastPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).BeginInit();
+            this.invertPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).BeginInit();
+            this.noisePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).BeginInit();
             this.procgenPanel.SuspendLayout();
             this.convolutionPanel.SuspendLayout();
             this.convolutionMatrixPanel.SuspendLayout();
@@ -191,17 +199,9 @@
             this.quantizePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantizeTrackBar)).BeginInit();
             this.greyscalePanel.SuspendLayout();
-            this.brightnessPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).BeginInit();
-            this.contrastPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).BeginInit();
-            this.invertPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).BeginInit();
-            this.noisePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).BeginInit();
             this.bottomInfoPanel.SuspendLayout();
             this.topToolbarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thicknessTrackBar)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -401,878 +401,6 @@
             this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
             this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseMove);
             this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseUp);
-            // 
-            // procgenPanel
-            // 
-            this.procgenPanel.ColumnCount = 1;
-            this.procgenPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.procgenPanel.Controls.Add(this.procgenLabel, 0, 0);
-            this.procgenPanel.Controls.Add(this.procgenLandBtn, 0, 1);
-            this.procgenPanel.Controls.Add(this.procgenSky, 0, 2);
-            this.procgenPanel.Location = new System.Drawing.Point(0, 0);
-            this.procgenPanel.Name = "procgenPanel";
-            this.procgenPanel.RowCount = 4;
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.24324F));
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.75676F));
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 286F));
-            this.procgenPanel.Size = new System.Drawing.Size(386, 549);
-            this.procgenPanel.TabIndex = 8;
-            // 
-            // procgenLabel
-            // 
-            this.procgenLabel.AutoSize = true;
-            this.procgenLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.procgenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.procgenLabel.Location = new System.Drawing.Point(3, 0);
-            this.procgenLabel.Name = "procgenLabel";
-            this.procgenLabel.Size = new System.Drawing.Size(380, 71);
-            this.procgenLabel.TabIndex = 0;
-            this.procgenLabel.Text = "Procedural Generation";
-            this.procgenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // convolutionPanel
-            // 
-            this.convolutionPanel.ColumnCount = 1;
-            this.convolutionPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.convolutionPanel.Controls.Add(this.convolutionLabel, 0, 0);
-            this.convolutionPanel.Controls.Add(this.convolutionBtn, 0, 1);
-            this.convolutionPanel.Controls.Add(this.convolutionSave, 0, 2);
-            this.convolutionPanel.Controls.Add(this.convolutionMatrixPanel, 0, 3);
-            this.convolutionPanel.Controls.Add(this.convolutionNormalize, 0, 4);
-            this.convolutionPanel.Controls.Add(this.convolutionLabel2, 0, 3);
-            this.convolutionPanel.Controls.Add(this.convolutionLabel3, 0, 4);
-            this.convolutionPanel.Location = new System.Drawing.Point(0, -3);
-            this.convolutionPanel.Name = "convolutionPanel";
-            this.convolutionPanel.RowCount = 7;
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.76744F));
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.23256F));
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.convolutionPanel.Size = new System.Drawing.Size(389, 564);
-            this.convolutionPanel.TabIndex = 7;
-            // 
-            // convolutionLabel
-            // 
-            this.convolutionLabel.AutoSize = true;
-            this.convolutionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.convolutionLabel.Location = new System.Drawing.Point(3, 0);
-            this.convolutionLabel.Name = "convolutionLabel";
-            this.convolutionLabel.Size = new System.Drawing.Size(383, 77);
-            this.convolutionLabel.TabIndex = 0;
-            this.convolutionLabel.Text = "Convolution";
-            this.convolutionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // convolutionBtn
-            // 
-            this.convolutionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionBtn.Location = new System.Drawing.Point(3, 80);
-            this.convolutionBtn.Name = "convolutionBtn";
-            this.convolutionBtn.Size = new System.Drawing.Size(383, 89);
-            this.convolutionBtn.TabIndex = 1;
-            this.convolutionBtn.Text = "Apply Convolution";
-            this.convolutionBtn.UseVisualStyleBackColor = true;
-            this.convolutionBtn.Click += new System.EventHandler(this.convolutionBtn_Click);
-            // 
-            // convolutionSave
-            // 
-            this.convolutionSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionSave.Location = new System.Drawing.Point(3, 175);
-            this.convolutionSave.Name = "convolutionSave";
-            this.convolutionSave.Size = new System.Drawing.Size(383, 83);
-            this.convolutionSave.TabIndex = 2;
-            this.convolutionSave.Text = "Set Filter";
-            this.convolutionSave.UseVisualStyleBackColor = true;
-            this.convolutionSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // convolutionMatrixPanel
-            // 
-            this.convolutionMatrixPanel.ColumnCount = 3;
-            this.convolutionMatrixPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.Controls.Add(this.convolution0x0, 0, 0);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution0x1, 1, 0);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution0x2, 2, 0);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution1x2, 2, 1);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution1x1, 1, 1);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution1x0, 0, 1);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution2x0, 0, 2);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution2x1, 1, 2);
-            this.convolutionMatrixPanel.Controls.Add(this.convolution2x2, 2, 2);
-            this.convolutionMatrixPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionMatrixPanel.Location = new System.Drawing.Point(3, 297);
-            this.convolutionMatrixPanel.Name = "convolutionMatrixPanel";
-            this.convolutionMatrixPanel.RowCount = 3;
-            this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.convolutionMatrixPanel.Size = new System.Drawing.Size(383, 132);
-            this.convolutionMatrixPanel.TabIndex = 3;
-            // 
-            // convolution0x0
-            // 
-            this.convolution0x0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution0x0.Location = new System.Drawing.Point(3, 3);
-            this.convolution0x0.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution0x0.Name = "convolution0x0";
-            this.convolution0x0.Size = new System.Drawing.Size(121, 26);
-            this.convolution0x0.TabIndex = 0;
-            this.convolution0x0.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // convolution0x1
-            // 
-            this.convolution0x1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution0x1.Location = new System.Drawing.Point(130, 3);
-            this.convolution0x1.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution0x1.Name = "convolution0x1";
-            this.convolution0x1.Size = new System.Drawing.Size(121, 26);
-            this.convolution0x1.TabIndex = 1;
-            this.convolution0x1.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // convolution0x2
-            // 
-            this.convolution0x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution0x2.Location = new System.Drawing.Point(257, 3);
-            this.convolution0x2.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution0x2.Name = "convolution0x2";
-            this.convolution0x2.Size = new System.Drawing.Size(123, 26);
-            this.convolution0x2.TabIndex = 2;
-            this.convolution0x2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // convolution1x2
-            // 
-            this.convolution1x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution1x2.Location = new System.Drawing.Point(257, 47);
-            this.convolution1x2.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution1x2.Name = "convolution1x2";
-            this.convolution1x2.Size = new System.Drawing.Size(123, 26);
-            this.convolution1x2.TabIndex = 3;
-            this.convolution1x2.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // convolution1x1
-            // 
-            this.convolution1x1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution1x1.Location = new System.Drawing.Point(130, 47);
-            this.convolution1x1.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution1x1.Name = "convolution1x1";
-            this.convolution1x1.Size = new System.Drawing.Size(121, 26);
-            this.convolution1x1.TabIndex = 4;
-            this.convolution1x1.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            // 
-            // convolution1x0
-            // 
-            this.convolution1x0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution1x0.Location = new System.Drawing.Point(3, 47);
-            this.convolution1x0.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution1x0.Name = "convolution1x0";
-            this.convolution1x0.Size = new System.Drawing.Size(121, 26);
-            this.convolution1x0.TabIndex = 5;
-            this.convolution1x0.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // convolution2x0
-            // 
-            this.convolution2x0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution2x0.Location = new System.Drawing.Point(3, 91);
-            this.convolution2x0.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution2x0.Name = "convolution2x0";
-            this.convolution2x0.Size = new System.Drawing.Size(121, 26);
-            this.convolution2x0.TabIndex = 6;
-            this.convolution2x0.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // convolution2x1
-            // 
-            this.convolution2x1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution2x1.Location = new System.Drawing.Point(130, 91);
-            this.convolution2x1.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution2x1.Name = "convolution2x1";
-            this.convolution2x1.Size = new System.Drawing.Size(121, 26);
-            this.convolution2x1.TabIndex = 7;
-            this.convolution2x1.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // convolution2x2
-            // 
-            this.convolution2x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolution2x2.Location = new System.Drawing.Point(257, 91);
-            this.convolution2x2.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.convolution2x2.Name = "convolution2x2";
-            this.convolution2x2.Size = new System.Drawing.Size(123, 26);
-            this.convolution2x2.TabIndex = 8;
-            this.convolution2x2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // convolutionNormalize
-            // 
-            this.convolutionNormalize.Location = new System.Drawing.Point(3, 472);
-            this.convolutionNormalize.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.convolutionNormalize.Name = "convolutionNormalize";
-            this.convolutionNormalize.Size = new System.Drawing.Size(383, 26);
-            this.convolutionNormalize.TabIndex = 4;
-            this.convolutionNormalize.Value = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            // 
-            // ditherPanel
-            // 
-            this.ditherPanel.ColumnCount = 1;
-            this.ditherPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ditherPanel.Controls.Add(this.ditherBtn, 0, 1);
-            this.ditherPanel.Controls.Add(this.ditherSave, 0, 2);
-            this.ditherPanel.Controls.Add(this.ditherBtn2x2, 0, 3);
-            this.ditherPanel.Controls.Add(this.ditherBtn4x4, 0, 4);
-            this.ditherPanel.Controls.Add(this.panel2, 0, 6);
-            this.ditherPanel.Controls.Add(this.ditherLabel, 0, 0);
-            this.ditherPanel.Location = new System.Drawing.Point(0, -3);
-            this.ditherPanel.Name = "ditherPanel";
-            this.ditherPanel.RowCount = 8;
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.21951F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.78049F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 189F));
-            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.ditherPanel.Size = new System.Drawing.Size(386, 564);
-            this.ditherPanel.TabIndex = 6;
-            // 
-            // ditherLabel
-            // 
-            this.ditherLabel.AutoSize = true;
-            this.ditherLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ditherLabel.Location = new System.Drawing.Point(3, 0);
-            this.ditherLabel.Name = "ditherLabel";
-            this.ditherLabel.Size = new System.Drawing.Size(380, 92);
-            this.ditherLabel.TabIndex = 0;
-            this.ditherLabel.Text = "Dither";
-            this.ditherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ditherBtn
-            // 
-            this.ditherBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherBtn.Location = new System.Drawing.Point(3, 95);
-            this.ditherBtn.Name = "ditherBtn";
-            this.ditherBtn.Size = new System.Drawing.Size(380, 81);
-            this.ditherBtn.TabIndex = 1;
-            this.ditherBtn.Text = "Apply Dither";
-            this.ditherBtn.UseVisualStyleBackColor = true;
-            this.ditherBtn.Click += new System.EventHandler(this.ditherBtn_Click);
-            // 
-            // ditherSave
-            // 
-            this.ditherSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherSave.Location = new System.Drawing.Point(3, 182);
-            this.ditherSave.Name = "ditherSave";
-            this.ditherSave.Size = new System.Drawing.Size(380, 38);
-            this.ditherSave.TabIndex = 2;
-            this.ditherSave.Text = "Set Filter";
-            this.ditherSave.UseVisualStyleBackColor = true;
-            this.ditherSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // ditherBtn2x2
-            // 
-            this.ditherBtn2x2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherBtn2x2.Location = new System.Drawing.Point(3, 226);
-            this.ditherBtn2x2.Name = "ditherBtn2x2";
-            this.ditherBtn2x2.Size = new System.Drawing.Size(380, 41);
-            this.ditherBtn2x2.TabIndex = 3;
-            this.ditherBtn2x2.Text = "2x2";
-            this.ditherBtn2x2.UseVisualStyleBackColor = true;
-            this.ditherBtn2x2.Click += new System.EventHandler(this.ditherBtn2x2_Click);
-            // 
-            // ditherBtn4x4
-            // 
-            this.ditherBtn4x4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ditherBtn4x4.Location = new System.Drawing.Point(3, 273);
-            this.ditherBtn4x4.Name = "ditherBtn4x4";
-            this.ditherBtn4x4.Size = new System.Drawing.Size(380, 42);
-            this.ditherBtn4x4.TabIndex = 4;
-            this.ditherBtn4x4.Text = "4x4";
-            this.ditherBtn4x4.UseVisualStyleBackColor = true;
-            this.ditherBtn4x4.Click += new System.EventHandler(this.ditherBtn4x4_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dither4x4Panel);
-            this.panel2.Controls.Add(this.dither2x2Panel);
-            this.panel2.Location = new System.Drawing.Point(3, 354);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 173);
-            this.panel2.TabIndex = 6;
-            // 
-            // dither4x4Panel
-            // 
-            this.dither4x4Panel.ColumnCount = 4;
-            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.dither4x4Panel.Controls.Add(this.dither4x4_0x0, 0, 0);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_0x1, 1, 0);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_1x0, 0, 1);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_2x0, 0, 2);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_1x1, 1, 1);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_3x0, 0, 3);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_2x1, 1, 2);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_3x1, 1, 3);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_2x2, 2, 2);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_1x2, 2, 1);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_0x2, 2, 0);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_0x3, 3, 0);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_1x3, 3, 1);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_2x3, 3, 2);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_3x3, 3, 3);
-            this.dither4x4Panel.Controls.Add(this.dither4x4_3x2, 2, 3);
-            this.dither4x4Panel.Location = new System.Drawing.Point(0, 0);
-            this.dither4x4Panel.Name = "dither4x4Panel";
-            this.dither4x4Panel.RowCount = 4;
-            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
-            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
-            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
-            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
-            this.dither4x4Panel.Size = new System.Drawing.Size(383, 170);
-            this.dither4x4Panel.TabIndex = 6;
-            this.dither4x4Panel.Visible = false;
-            // 
-            // dither4x4_0x0
-            // 
-            this.dither4x4_0x0.Location = new System.Drawing.Point(3, 3);
-            this.dither4x4_0x0.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_0x0.Name = "dither4x4_0x0";
-            this.dither4x4_0x0.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_0x0.TabIndex = 0;
-            // 
-            // dither4x4_0x1
-            // 
-            this.dither4x4_0x1.Location = new System.Drawing.Point(98, 3);
-            this.dither4x4_0x1.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_0x1.Name = "dither4x4_0x1";
-            this.dither4x4_0x1.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_0x1.TabIndex = 1;
-            this.dither4x4_0x1.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_1x0
-            // 
-            this.dither4x4_1x0.Location = new System.Drawing.Point(3, 45);
-            this.dither4x4_1x0.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_1x0.Name = "dither4x4_1x0";
-            this.dither4x4_1x0.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_1x0.TabIndex = 2;
-            this.dither4x4_1x0.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_2x0
-            // 
-            this.dither4x4_2x0.Location = new System.Drawing.Point(3, 87);
-            this.dither4x4_2x0.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_2x0.Name = "dither4x4_2x0";
-            this.dither4x4_2x0.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_2x0.TabIndex = 3;
-            this.dither4x4_2x0.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_1x1
-            // 
-            this.dither4x4_1x1.Location = new System.Drawing.Point(98, 45);
-            this.dither4x4_1x1.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_1x1.Name = "dither4x4_1x1";
-            this.dither4x4_1x1.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_1x1.TabIndex = 4;
-            this.dither4x4_1x1.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_3x0
-            // 
-            this.dither4x4_3x0.Location = new System.Drawing.Point(3, 129);
-            this.dither4x4_3x0.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_3x0.Name = "dither4x4_3x0";
-            this.dither4x4_3x0.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_3x0.TabIndex = 5;
-            this.dither4x4_3x0.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_2x1
-            // 
-            this.dither4x4_2x1.Location = new System.Drawing.Point(98, 87);
-            this.dither4x4_2x1.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_2x1.Name = "dither4x4_2x1";
-            this.dither4x4_2x1.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_2x1.TabIndex = 6;
-            this.dither4x4_2x1.Value = new decimal(new int[] {
-            14,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_3x1
-            // 
-            this.dither4x4_3x1.Location = new System.Drawing.Point(98, 129);
-            this.dither4x4_3x1.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_3x1.Name = "dither4x4_3x1";
-            this.dither4x4_3x1.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_3x1.TabIndex = 7;
-            this.dither4x4_3x1.Value = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_2x2
-            // 
-            this.dither4x4_2x2.Location = new System.Drawing.Point(193, 87);
-            this.dither4x4_2x2.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_2x2.Name = "dither4x4_2x2";
-            this.dither4x4_2x2.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_2x2.TabIndex = 8;
-            this.dither4x4_2x2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_1x2
-            // 
-            this.dither4x4_1x2.Location = new System.Drawing.Point(193, 45);
-            this.dither4x4_1x2.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_1x2.Name = "dither4x4_1x2";
-            this.dither4x4_1x2.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_1x2.TabIndex = 9;
-            this.dither4x4_1x2.Value = new decimal(new int[] {
-            11,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_0x2
-            // 
-            this.dither4x4_0x2.Location = new System.Drawing.Point(193, 3);
-            this.dither4x4_0x2.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_0x2.Name = "dither4x4_0x2";
-            this.dither4x4_0x2.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_0x2.TabIndex = 10;
-            this.dither4x4_0x2.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_0x3
-            // 
-            this.dither4x4_0x3.Location = new System.Drawing.Point(288, 3);
-            this.dither4x4_0x3.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_0x3.Name = "dither4x4_0x3";
-            this.dither4x4_0x3.Size = new System.Drawing.Size(92, 26);
-            this.dither4x4_0x3.TabIndex = 11;
-            this.dither4x4_0x3.Value = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_1x3
-            // 
-            this.dither4x4_1x3.Location = new System.Drawing.Point(288, 45);
-            this.dither4x4_1x3.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_1x3.Name = "dither4x4_1x3";
-            this.dither4x4_1x3.Size = new System.Drawing.Size(92, 26);
-            this.dither4x4_1x3.TabIndex = 12;
-            this.dither4x4_1x3.Value = new decimal(new int[] {
-            7,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_2x3
-            // 
-            this.dither4x4_2x3.Location = new System.Drawing.Point(288, 87);
-            this.dither4x4_2x3.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_2x3.Name = "dither4x4_2x3";
-            this.dither4x4_2x3.Size = new System.Drawing.Size(92, 26);
-            this.dither4x4_2x3.TabIndex = 13;
-            this.dither4x4_2x3.Value = new decimal(new int[] {
-            13,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_3x3
-            // 
-            this.dither4x4_3x3.Location = new System.Drawing.Point(288, 129);
-            this.dither4x4_3x3.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_3x3.Name = "dither4x4_3x3";
-            this.dither4x4_3x3.Size = new System.Drawing.Size(92, 26);
-            this.dither4x4_3x3.TabIndex = 14;
-            this.dither4x4_3x3.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // dither4x4_3x2
-            // 
-            this.dither4x4_3x2.Location = new System.Drawing.Point(193, 129);
-            this.dither4x4_3x2.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.dither4x4_3x2.Name = "dither4x4_3x2";
-            this.dither4x4_3x2.Size = new System.Drawing.Size(89, 26);
-            this.dither4x4_3x2.TabIndex = 15;
-            this.dither4x4_3x2.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            // 
-            // dither2x2Panel
-            // 
-            this.dither2x2Panel.ColumnCount = 2;
-            this.dither2x2Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.dither2x2Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.dither2x2Panel.Controls.Add(this.dither2x2_0x0, 0, 0);
-            this.dither2x2Panel.Controls.Add(this.dither2x2_0x1, 1, 0);
-            this.dither2x2Panel.Controls.Add(this.dither2x2_1x0, 0, 1);
-            this.dither2x2Panel.Controls.Add(this.dither2x2_1x1, 1, 1);
-            this.dither2x2Panel.Location = new System.Drawing.Point(0, 0);
-            this.dither2x2Panel.Name = "dither2x2Panel";
-            this.dither2x2Panel.RowCount = 2;
-            this.dither2x2Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.dither2x2Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.dither2x2Panel.Size = new System.Drawing.Size(380, 173);
-            this.dither2x2Panel.TabIndex = 5;
-            // 
-            // dither2x2_0x0
-            // 
-            this.dither2x2_0x0.Location = new System.Drawing.Point(3, 3);
-            this.dither2x2_0x0.Name = "dither2x2_0x0";
-            this.dither2x2_0x0.Size = new System.Drawing.Size(120, 26);
-            this.dither2x2_0x0.TabIndex = 0;
-            // 
-            // dither2x2_0x1
-            // 
-            this.dither2x2_0x1.Location = new System.Drawing.Point(193, 3);
-            this.dither2x2_0x1.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.dither2x2_0x1.Name = "dither2x2_0x1";
-            this.dither2x2_0x1.Size = new System.Drawing.Size(120, 26);
-            this.dither2x2_0x1.TabIndex = 1;
-            this.dither2x2_0x1.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            // 
-            // dither2x2_1x0
-            // 
-            this.dither2x2_1x0.Location = new System.Drawing.Point(3, 89);
-            this.dither2x2_1x0.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.dither2x2_1x0.Name = "dither2x2_1x0";
-            this.dither2x2_1x0.Size = new System.Drawing.Size(120, 26);
-            this.dither2x2_1x0.TabIndex = 2;
-            this.dither2x2_1x0.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // dither2x2_1x1
-            // 
-            this.dither2x2_1x1.Location = new System.Drawing.Point(193, 89);
-            this.dither2x2_1x1.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.dither2x2_1x1.Name = "dither2x2_1x1";
-            this.dither2x2_1x1.Size = new System.Drawing.Size(120, 26);
-            this.dither2x2_1x1.TabIndex = 3;
-            this.dither2x2_1x1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // quantizePanel
-            // 
-            this.quantizePanel.ColumnCount = 1;
-            this.quantizePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.quantizePanel.Controls.Add(this.quantizeLabel, 0, 0);
-            this.quantizePanel.Controls.Add(this.quantizeTrackBar, 0, 1);
-            this.quantizePanel.Controls.Add(this.quantizeSave, 0, 3);
-            this.quantizePanel.Controls.Add(this.quantizeTrackBarLabel, 0, 2);
-            this.quantizePanel.Location = new System.Drawing.Point(0, -3);
-            this.quantizePanel.Name = "quantizePanel";
-            this.quantizePanel.RowCount = 5;
-            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.50237F));
-            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.49763F));
-            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
-            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 192F));
-            this.quantizePanel.Size = new System.Drawing.Size(386, 538);
-            this.quantizePanel.TabIndex = 5;
-            // 
-            // quantizeLabel
-            // 
-            this.quantizeLabel.AutoSize = true;
-            this.quantizeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quantizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantizeLabel.Location = new System.Drawing.Point(3, 0);
-            this.quantizeLabel.Name = "quantizeLabel";
-            this.quantizeLabel.Size = new System.Drawing.Size(380, 94);
-            this.quantizeLabel.TabIndex = 0;
-            this.quantizeLabel.Text = "Quantize";
-            this.quantizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // quantizeTrackBar
-            // 
-            this.quantizeTrackBar.Location = new System.Drawing.Point(3, 97);
-            this.quantizeTrackBar.Maximum = 255;
-            this.quantizeTrackBar.Minimum = 2;
-            this.quantizeTrackBar.Name = "quantizeTrackBar";
-            this.quantizeTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.quantizeTrackBar.Size = new System.Drawing.Size(380, 45);
-            this.quantizeTrackBar.TabIndex = 1;
-            this.quantizeTrackBar.Value = 2;
-            this.quantizeTrackBar.Scroll += new System.EventHandler(this.quantizeTrackBar_Scroll);
-            // 
-            // quantizeTrackBarLabel
-            // 
-            this.quantizeTrackBarLabel.AutoSize = true;
-            this.quantizeTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quantizeTrackBarLabel.Location = new System.Drawing.Point(3, 173);
-            this.quantizeTrackBarLabel.Name = "quantizeTrackBarLabel";
-            this.quantizeTrackBarLabel.Size = new System.Drawing.Size(380, 73);
-            this.quantizeTrackBarLabel.TabIndex = 2;
-            this.quantizeTrackBarLabel.Text = "2";
-            this.quantizeTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // quantizeSave
-            // 
-            this.quantizeSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quantizeSave.Location = new System.Drawing.Point(3, 249);
-            this.quantizeSave.Name = "quantizeSave";
-            this.quantizeSave.Size = new System.Drawing.Size(380, 93);
-            this.quantizeSave.TabIndex = 3;
-            this.quantizeSave.Text = "Set Filter";
-            this.quantizeSave.UseVisualStyleBackColor = true;
-            this.quantizeSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
-            // 
-            // greyscalePanel
-            // 
-            this.greyscalePanel.ColumnCount = 1;
-            this.greyscalePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.greyscalePanel.Controls.Add(this.greyscaleLabel, 0, 0);
-            this.greyscalePanel.Controls.Add(this.greyscaleBtn, 0, 1);
-            this.greyscalePanel.Controls.Add(this.greyscaleSave, 0, 2);
-            this.greyscalePanel.Location = new System.Drawing.Point(0, -3);
-            this.greyscalePanel.Name = "greyscalePanel";
-            this.greyscalePanel.RowCount = 4;
-            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.39367F));
-            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.60633F));
-            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 273F));
-            this.greyscalePanel.Size = new System.Drawing.Size(386, 552);
-            this.greyscalePanel.TabIndex = 4;
-            // 
-            // greyscaleLabel
-            // 
-            this.greyscaleLabel.AutoSize = true;
-            this.greyscaleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.greyscaleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.greyscaleLabel.Location = new System.Drawing.Point(3, 0);
-            this.greyscaleLabel.Name = "greyscaleLabel";
-            this.greyscaleLabel.Size = new System.Drawing.Size(380, 107);
-            this.greyscaleLabel.TabIndex = 0;
-            this.greyscaleLabel.Text = "Greyscale";
-            this.greyscaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // greyscaleBtn
-            // 
-            this.greyscaleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.greyscaleBtn.Location = new System.Drawing.Point(3, 110);
-            this.greyscaleBtn.Name = "greyscaleBtn";
-            this.greyscaleBtn.Size = new System.Drawing.Size(380, 88);
-            this.greyscaleBtn.TabIndex = 1;
-            this.greyscaleBtn.Text = "Apply Greyscale";
-            this.greyscaleBtn.UseVisualStyleBackColor = true;
-            this.greyscaleBtn.Click += new System.EventHandler(this.greyscaleBtn_Click);
-            // 
-            // greyscaleSave
-            // 
-            this.greyscaleSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.greyscaleSave.Location = new System.Drawing.Point(3, 204);
-            this.greyscaleSave.Name = "greyscaleSave";
-            this.greyscaleSave.Size = new System.Drawing.Size(380, 71);
-            this.greyscaleSave.TabIndex = 2;
-            this.greyscaleSave.Text = "Set Filter";
-            this.greyscaleSave.UseVisualStyleBackColor = true;
-            this.greyscaleSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
             // 
             // brightnessPanel
             // 
@@ -1528,6 +656,922 @@
             this.noiseSave.UseVisualStyleBackColor = true;
             this.noiseSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
             // 
+            // procgenPanel
+            // 
+            this.procgenPanel.ColumnCount = 1;
+            this.procgenPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.procgenPanel.Controls.Add(this.procgenLabel, 0, 0);
+            this.procgenPanel.Controls.Add(this.procgenLandBtn, 0, 1);
+            this.procgenPanel.Controls.Add(this.procgenSky, 0, 2);
+            this.procgenPanel.Location = new System.Drawing.Point(0, 0);
+            this.procgenPanel.Name = "procgenPanel";
+            this.procgenPanel.RowCount = 4;
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.24324F));
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.75676F));
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.procgenPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 286F));
+            this.procgenPanel.Size = new System.Drawing.Size(386, 549);
+            this.procgenPanel.TabIndex = 8;
+            // 
+            // procgenLabel
+            // 
+            this.procgenLabel.AutoSize = true;
+            this.procgenLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.procgenLabel.Location = new System.Drawing.Point(3, 0);
+            this.procgenLabel.Name = "procgenLabel";
+            this.procgenLabel.Size = new System.Drawing.Size(380, 71);
+            this.procgenLabel.TabIndex = 0;
+            this.procgenLabel.Text = "Procedural Generation";
+            this.procgenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // procgenLandBtn
+            // 
+            this.procgenLandBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenLandBtn.Location = new System.Drawing.Point(3, 74);
+            this.procgenLandBtn.Name = "procgenLandBtn";
+            this.procgenLandBtn.Size = new System.Drawing.Size(380, 88);
+            this.procgenLandBtn.TabIndex = 1;
+            this.procgenLandBtn.Text = "Generate Land";
+            this.procgenLandBtn.UseVisualStyleBackColor = true;
+            this.procgenLandBtn.Click += new System.EventHandler(this.procgenLandBtn_Click);
+            // 
+            // procgenSky
+            // 
+            this.procgenSky.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.procgenSky.Location = new System.Drawing.Point(3, 168);
+            this.procgenSky.Name = "procgenSky";
+            this.procgenSky.Size = new System.Drawing.Size(380, 91);
+            this.procgenSky.TabIndex = 2;
+            this.procgenSky.Text = "Generate Sky";
+            this.procgenSky.UseVisualStyleBackColor = true;
+            this.procgenSky.Click += new System.EventHandler(this.procgenSky_Click);
+            // 
+            // convolutionPanel
+            // 
+            this.convolutionPanel.ColumnCount = 1;
+            this.convolutionPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.convolutionPanel.Controls.Add(this.convolutionLabel, 0, 0);
+            this.convolutionPanel.Controls.Add(this.convolutionBtn, 0, 1);
+            this.convolutionPanel.Controls.Add(this.convolutionSave, 0, 2);
+            this.convolutionPanel.Controls.Add(this.convolutionMatrixPanel, 0, 3);
+            this.convolutionPanel.Controls.Add(this.convolutionNormalize, 0, 4);
+            this.convolutionPanel.Controls.Add(this.convolutionLabel2, 0, 3);
+            this.convolutionPanel.Controls.Add(this.convolutionLabel3, 0, 4);
+            this.convolutionPanel.Location = new System.Drawing.Point(0, -3);
+            this.convolutionPanel.Name = "convolutionPanel";
+            this.convolutionPanel.RowCount = 7;
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.76744F));
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.23256F));
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.convolutionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.convolutionPanel.Size = new System.Drawing.Size(389, 564);
+            this.convolutionPanel.TabIndex = 7;
+            // 
+            // convolutionLabel
+            // 
+            this.convolutionLabel.AutoSize = true;
+            this.convolutionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convolutionLabel.Location = new System.Drawing.Point(3, 0);
+            this.convolutionLabel.Name = "convolutionLabel";
+            this.convolutionLabel.Size = new System.Drawing.Size(383, 77);
+            this.convolutionLabel.TabIndex = 0;
+            this.convolutionLabel.Text = "Convolution";
+            this.convolutionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // convolutionBtn
+            // 
+            this.convolutionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionBtn.Location = new System.Drawing.Point(3, 80);
+            this.convolutionBtn.Name = "convolutionBtn";
+            this.convolutionBtn.Size = new System.Drawing.Size(383, 89);
+            this.convolutionBtn.TabIndex = 1;
+            this.convolutionBtn.Text = "Apply Convolution";
+            this.convolutionBtn.UseVisualStyleBackColor = true;
+            this.convolutionBtn.Click += new System.EventHandler(this.convolutionBtn_Click);
+            // 
+            // convolutionSave
+            // 
+            this.convolutionSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionSave.Location = new System.Drawing.Point(3, 175);
+            this.convolutionSave.Name = "convolutionSave";
+            this.convolutionSave.Size = new System.Drawing.Size(383, 83);
+            this.convolutionSave.TabIndex = 2;
+            this.convolutionSave.Text = "Set Filter";
+            this.convolutionSave.UseVisualStyleBackColor = true;
+            this.convolutionSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // convolutionMatrixPanel
+            // 
+            this.convolutionMatrixPanel.ColumnCount = 3;
+            this.convolutionMatrixPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.convolutionMatrixPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.convolutionMatrixPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.convolutionMatrixPanel.Controls.Add(this.convolution0x0, 0, 0);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution0x1, 1, 0);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution0x2, 2, 0);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution1x2, 2, 1);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution1x1, 1, 1);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution1x0, 0, 1);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution2x0, 0, 2);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution2x1, 1, 2);
+            this.convolutionMatrixPanel.Controls.Add(this.convolution2x2, 2, 2);
+            this.convolutionMatrixPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionMatrixPanel.Location = new System.Drawing.Point(3, 297);
+            this.convolutionMatrixPanel.Name = "convolutionMatrixPanel";
+            this.convolutionMatrixPanel.RowCount = 3;
+            this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.convolutionMatrixPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.convolutionMatrixPanel.Size = new System.Drawing.Size(383, 132);
+            this.convolutionMatrixPanel.TabIndex = 3;
+            // 
+            // convolution0x0
+            // 
+            this.convolution0x0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution0x0.Location = new System.Drawing.Point(3, 3);
+            this.convolution0x0.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution0x0.Name = "convolution0x0";
+            this.convolution0x0.Size = new System.Drawing.Size(121, 20);
+            this.convolution0x0.TabIndex = 0;
+            this.convolution0x0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // convolution0x1
+            // 
+            this.convolution0x1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution0x1.Location = new System.Drawing.Point(130, 3);
+            this.convolution0x1.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution0x1.Name = "convolution0x1";
+            this.convolution0x1.Size = new System.Drawing.Size(121, 20);
+            this.convolution0x1.TabIndex = 1;
+            this.convolution0x1.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // convolution0x2
+            // 
+            this.convolution0x2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution0x2.Location = new System.Drawing.Point(257, 3);
+            this.convolution0x2.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution0x2.Name = "convolution0x2";
+            this.convolution0x2.Size = new System.Drawing.Size(123, 20);
+            this.convolution0x2.TabIndex = 2;
+            this.convolution0x2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // convolution1x2
+            // 
+            this.convolution1x2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution1x2.Location = new System.Drawing.Point(257, 47);
+            this.convolution1x2.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution1x2.Name = "convolution1x2";
+            this.convolution1x2.Size = new System.Drawing.Size(123, 20);
+            this.convolution1x2.TabIndex = 3;
+            this.convolution1x2.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // convolution1x1
+            // 
+            this.convolution1x1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution1x1.Location = new System.Drawing.Point(130, 47);
+            this.convolution1x1.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution1x1.Name = "convolution1x1";
+            this.convolution1x1.Size = new System.Drawing.Size(121, 20);
+            this.convolution1x1.TabIndex = 4;
+            this.convolution1x1.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            // 
+            // convolution1x0
+            // 
+            this.convolution1x0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution1x0.Location = new System.Drawing.Point(3, 47);
+            this.convolution1x0.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution1x0.Name = "convolution1x0";
+            this.convolution1x0.Size = new System.Drawing.Size(121, 20);
+            this.convolution1x0.TabIndex = 5;
+            this.convolution1x0.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // convolution2x0
+            // 
+            this.convolution2x0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution2x0.Location = new System.Drawing.Point(3, 91);
+            this.convolution2x0.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution2x0.Name = "convolution2x0";
+            this.convolution2x0.Size = new System.Drawing.Size(121, 20);
+            this.convolution2x0.TabIndex = 6;
+            this.convolution2x0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // convolution2x1
+            // 
+            this.convolution2x1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution2x1.Location = new System.Drawing.Point(130, 91);
+            this.convolution2x1.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution2x1.Name = "convolution2x1";
+            this.convolution2x1.Size = new System.Drawing.Size(121, 20);
+            this.convolution2x1.TabIndex = 7;
+            this.convolution2x1.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // convolution2x2
+            // 
+            this.convolution2x2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolution2x2.Location = new System.Drawing.Point(257, 91);
+            this.convolution2x2.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.convolution2x2.Name = "convolution2x2";
+            this.convolution2x2.Size = new System.Drawing.Size(123, 20);
+            this.convolution2x2.TabIndex = 8;
+            this.convolution2x2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // convolutionNormalize
+            // 
+            this.convolutionNormalize.Location = new System.Drawing.Point(3, 472);
+            this.convolutionNormalize.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.convolutionNormalize.Name = "convolutionNormalize";
+            this.convolutionNormalize.Size = new System.Drawing.Size(383, 20);
+            this.convolutionNormalize.TabIndex = 4;
+            this.convolutionNormalize.Value = new decimal(new int[] {
+            16,
+            0,
+            0,
+            0});
+            // 
+            // convolutionLabel2
+            // 
+            this.convolutionLabel2.AutoSize = true;
+            this.convolutionLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionLabel2.Location = new System.Drawing.Point(3, 261);
+            this.convolutionLabel2.Name = "convolutionLabel2";
+            this.convolutionLabel2.Size = new System.Drawing.Size(383, 33);
+            this.convolutionLabel2.TabIndex = 5;
+            this.convolutionLabel2.Text = "Convolution Mask";
+            this.convolutionLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // convolutionLabel3
+            // 
+            this.convolutionLabel3.AutoSize = true;
+            this.convolutionLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.convolutionLabel3.Location = new System.Drawing.Point(3, 432);
+            this.convolutionLabel3.Name = "convolutionLabel3";
+            this.convolutionLabel3.Size = new System.Drawing.Size(383, 37);
+            this.convolutionLabel3.TabIndex = 6;
+            this.convolutionLabel3.Text = "Normalisation Value";
+            this.convolutionLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ditherPanel
+            // 
+            this.ditherPanel.ColumnCount = 1;
+            this.ditherPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.ditherPanel.Controls.Add(this.ditherBtn, 0, 1);
+            this.ditherPanel.Controls.Add(this.ditherSave, 0, 2);
+            this.ditherPanel.Controls.Add(this.ditherBtn2x2, 0, 3);
+            this.ditherPanel.Controls.Add(this.ditherBtn4x4, 0, 4);
+            this.ditherPanel.Controls.Add(this.panel2, 0, 6);
+            this.ditherPanel.Controls.Add(this.ditherLabel, 0, 0);
+            this.ditherPanel.Location = new System.Drawing.Point(0, -3);
+            this.ditherPanel.Name = "ditherPanel";
+            this.ditherPanel.RowCount = 8;
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.21951F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.78049F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 189F));
+            this.ditherPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.ditherPanel.Size = new System.Drawing.Size(386, 564);
+            this.ditherPanel.TabIndex = 6;
+            // 
+            // ditherBtn
+            // 
+            this.ditherBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ditherBtn.Location = new System.Drawing.Point(3, 95);
+            this.ditherBtn.Name = "ditherBtn";
+            this.ditherBtn.Size = new System.Drawing.Size(380, 81);
+            this.ditherBtn.TabIndex = 1;
+            this.ditherBtn.Text = "Apply Dither";
+            this.ditherBtn.UseVisualStyleBackColor = true;
+            this.ditherBtn.Click += new System.EventHandler(this.ditherBtn_Click);
+            // 
+            // ditherSave
+            // 
+            this.ditherSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ditherSave.Location = new System.Drawing.Point(3, 182);
+            this.ditherSave.Name = "ditherSave";
+            this.ditherSave.Size = new System.Drawing.Size(380, 38);
+            this.ditherSave.TabIndex = 2;
+            this.ditherSave.Text = "Set Filter";
+            this.ditherSave.UseVisualStyleBackColor = true;
+            this.ditherSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // ditherBtn2x2
+            // 
+            this.ditherBtn2x2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ditherBtn2x2.Location = new System.Drawing.Point(3, 226);
+            this.ditherBtn2x2.Name = "ditherBtn2x2";
+            this.ditherBtn2x2.Size = new System.Drawing.Size(380, 41);
+            this.ditherBtn2x2.TabIndex = 3;
+            this.ditherBtn2x2.Text = "2x2";
+            this.ditherBtn2x2.UseVisualStyleBackColor = true;
+            this.ditherBtn2x2.Click += new System.EventHandler(this.ditherBtn2x2_Click);
+            // 
+            // ditherBtn4x4
+            // 
+            this.ditherBtn4x4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ditherBtn4x4.Location = new System.Drawing.Point(3, 273);
+            this.ditherBtn4x4.Name = "ditherBtn4x4";
+            this.ditherBtn4x4.Size = new System.Drawing.Size(380, 42);
+            this.ditherBtn4x4.TabIndex = 4;
+            this.ditherBtn4x4.Text = "4x4";
+            this.ditherBtn4x4.UseVisualStyleBackColor = true;
+            this.ditherBtn4x4.Click += new System.EventHandler(this.ditherBtn4x4_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dither4x4Panel);
+            this.panel2.Controls.Add(this.dither2x2Panel);
+            this.panel2.Location = new System.Drawing.Point(3, 354);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(380, 173);
+            this.panel2.TabIndex = 6;
+            // 
+            // dither4x4Panel
+            // 
+            this.dither4x4Panel.ColumnCount = 4;
+            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.dither4x4Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.dither4x4Panel.Controls.Add(this.dither4x4_0x0, 0, 0);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_0x1, 1, 0);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_1x0, 0, 1);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_2x0, 0, 2);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_1x1, 1, 1);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_3x0, 0, 3);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_2x1, 1, 2);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_3x1, 1, 3);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_2x2, 2, 2);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_1x2, 2, 1);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_0x2, 2, 0);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_0x3, 3, 0);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_1x3, 3, 1);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_2x3, 3, 2);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_3x3, 3, 3);
+            this.dither4x4Panel.Controls.Add(this.dither4x4_3x2, 2, 3);
+            this.dither4x4Panel.Location = new System.Drawing.Point(0, 0);
+            this.dither4x4Panel.Name = "dither4x4Panel";
+            this.dither4x4Panel.RowCount = 4;
+            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
+            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
+            this.dither4x4Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.dither4x4Panel.Size = new System.Drawing.Size(383, 170);
+            this.dither4x4Panel.TabIndex = 6;
+            this.dither4x4Panel.Visible = false;
+            // 
+            // dither4x4_0x0
+            // 
+            this.dither4x4_0x0.Location = new System.Drawing.Point(3, 3);
+            this.dither4x4_0x0.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_0x0.Name = "dither4x4_0x0";
+            this.dither4x4_0x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_0x0.TabIndex = 0;
+            // 
+            // dither4x4_0x1
+            // 
+            this.dither4x4_0x1.Location = new System.Drawing.Point(98, 3);
+            this.dither4x4_0x1.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_0x1.Name = "dither4x4_0x1";
+            this.dither4x4_0x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_0x1.TabIndex = 1;
+            this.dither4x4_0x1.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_1x0
+            // 
+            this.dither4x4_1x0.Location = new System.Drawing.Point(3, 45);
+            this.dither4x4_1x0.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_1x0.Name = "dither4x4_1x0";
+            this.dither4x4_1x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_1x0.TabIndex = 2;
+            this.dither4x4_1x0.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_2x0
+            // 
+            this.dither4x4_2x0.Location = new System.Drawing.Point(3, 87);
+            this.dither4x4_2x0.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_2x0.Name = "dither4x4_2x0";
+            this.dither4x4_2x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_2x0.TabIndex = 3;
+            this.dither4x4_2x0.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_1x1
+            // 
+            this.dither4x4_1x1.Location = new System.Drawing.Point(98, 45);
+            this.dither4x4_1x1.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_1x1.Name = "dither4x4_1x1";
+            this.dither4x4_1x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_1x1.TabIndex = 4;
+            this.dither4x4_1x1.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_3x0
+            // 
+            this.dither4x4_3x0.Location = new System.Drawing.Point(3, 129);
+            this.dither4x4_3x0.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_3x0.Name = "dither4x4_3x0";
+            this.dither4x4_3x0.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_3x0.TabIndex = 5;
+            this.dither4x4_3x0.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_2x1
+            // 
+            this.dither4x4_2x1.Location = new System.Drawing.Point(98, 87);
+            this.dither4x4_2x1.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_2x1.Name = "dither4x4_2x1";
+            this.dither4x4_2x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_2x1.TabIndex = 6;
+            this.dither4x4_2x1.Value = new decimal(new int[] {
+            14,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_3x1
+            // 
+            this.dither4x4_3x1.Location = new System.Drawing.Point(98, 129);
+            this.dither4x4_3x1.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_3x1.Name = "dither4x4_3x1";
+            this.dither4x4_3x1.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_3x1.TabIndex = 7;
+            this.dither4x4_3x1.Value = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_2x2
+            // 
+            this.dither4x4_2x2.Location = new System.Drawing.Point(193, 87);
+            this.dither4x4_2x2.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_2x2.Name = "dither4x4_2x2";
+            this.dither4x4_2x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_2x2.TabIndex = 8;
+            this.dither4x4_2x2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_1x2
+            // 
+            this.dither4x4_1x2.Location = new System.Drawing.Point(193, 45);
+            this.dither4x4_1x2.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_1x2.Name = "dither4x4_1x2";
+            this.dither4x4_1x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_1x2.TabIndex = 9;
+            this.dither4x4_1x2.Value = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_0x2
+            // 
+            this.dither4x4_0x2.Location = new System.Drawing.Point(193, 3);
+            this.dither4x4_0x2.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_0x2.Name = "dither4x4_0x2";
+            this.dither4x4_0x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_0x2.TabIndex = 10;
+            this.dither4x4_0x2.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_0x3
+            // 
+            this.dither4x4_0x3.Location = new System.Drawing.Point(288, 3);
+            this.dither4x4_0x3.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_0x3.Name = "dither4x4_0x3";
+            this.dither4x4_0x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_0x3.TabIndex = 11;
+            this.dither4x4_0x3.Value = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_1x3
+            // 
+            this.dither4x4_1x3.Location = new System.Drawing.Point(288, 45);
+            this.dither4x4_1x3.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_1x3.Name = "dither4x4_1x3";
+            this.dither4x4_1x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_1x3.TabIndex = 12;
+            this.dither4x4_1x3.Value = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_2x3
+            // 
+            this.dither4x4_2x3.Location = new System.Drawing.Point(288, 87);
+            this.dither4x4_2x3.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_2x3.Name = "dither4x4_2x3";
+            this.dither4x4_2x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_2x3.TabIndex = 13;
+            this.dither4x4_2x3.Value = new decimal(new int[] {
+            13,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_3x3
+            // 
+            this.dither4x4_3x3.Location = new System.Drawing.Point(288, 129);
+            this.dither4x4_3x3.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_3x3.Name = "dither4x4_3x3";
+            this.dither4x4_3x3.Size = new System.Drawing.Size(92, 20);
+            this.dither4x4_3x3.TabIndex = 14;
+            this.dither4x4_3x3.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // dither4x4_3x2
+            // 
+            this.dither4x4_3x2.Location = new System.Drawing.Point(193, 129);
+            this.dither4x4_3x2.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.dither4x4_3x2.Name = "dither4x4_3x2";
+            this.dither4x4_3x2.Size = new System.Drawing.Size(89, 20);
+            this.dither4x4_3x2.TabIndex = 15;
+            this.dither4x4_3x2.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            // 
+            // dither2x2Panel
+            // 
+            this.dither2x2Panel.ColumnCount = 2;
+            this.dither2x2Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dither2x2Panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dither2x2Panel.Controls.Add(this.dither2x2_0x0, 0, 0);
+            this.dither2x2Panel.Controls.Add(this.dither2x2_0x1, 1, 0);
+            this.dither2x2Panel.Controls.Add(this.dither2x2_1x0, 0, 1);
+            this.dither2x2Panel.Controls.Add(this.dither2x2_1x1, 1, 1);
+            this.dither2x2Panel.Location = new System.Drawing.Point(0, 0);
+            this.dither2x2Panel.Name = "dither2x2Panel";
+            this.dither2x2Panel.RowCount = 2;
+            this.dither2x2Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dither2x2Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dither2x2Panel.Size = new System.Drawing.Size(380, 173);
+            this.dither2x2Panel.TabIndex = 5;
+            // 
+            // dither2x2_0x0
+            // 
+            this.dither2x2_0x0.Location = new System.Drawing.Point(3, 3);
+            this.dither2x2_0x0.Name = "dither2x2_0x0";
+            this.dither2x2_0x0.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_0x0.TabIndex = 0;
+            // 
+            // dither2x2_0x1
+            // 
+            this.dither2x2_0x1.Location = new System.Drawing.Point(193, 3);
+            this.dither2x2_0x1.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.dither2x2_0x1.Name = "dither2x2_0x1";
+            this.dither2x2_0x1.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_0x1.TabIndex = 1;
+            this.dither2x2_0x1.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // dither2x2_1x0
+            // 
+            this.dither2x2_1x0.Location = new System.Drawing.Point(3, 89);
+            this.dither2x2_1x0.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.dither2x2_1x0.Name = "dither2x2_1x0";
+            this.dither2x2_1x0.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_1x0.TabIndex = 2;
+            this.dither2x2_1x0.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // dither2x2_1x1
+            // 
+            this.dither2x2_1x1.Location = new System.Drawing.Point(193, 89);
+            this.dither2x2_1x1.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.dither2x2_1x1.Name = "dither2x2_1x1";
+            this.dither2x2_1x1.Size = new System.Drawing.Size(120, 20);
+            this.dither2x2_1x1.TabIndex = 3;
+            this.dither2x2_1x1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // ditherLabel
+            // 
+            this.ditherLabel.AutoSize = true;
+            this.ditherLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ditherLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ditherLabel.Location = new System.Drawing.Point(3, 0);
+            this.ditherLabel.Name = "ditherLabel";
+            this.ditherLabel.Size = new System.Drawing.Size(380, 92);
+            this.ditherLabel.TabIndex = 0;
+            this.ditherLabel.Text = "Dither";
+            this.ditherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // quantizePanel
+            // 
+            this.quantizePanel.ColumnCount = 1;
+            this.quantizePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.quantizePanel.Controls.Add(this.quantizeLabel, 0, 0);
+            this.quantizePanel.Controls.Add(this.quantizeTrackBar, 0, 1);
+            this.quantizePanel.Controls.Add(this.quantizeSave, 0, 3);
+            this.quantizePanel.Controls.Add(this.quantizeTrackBarLabel, 0, 2);
+            this.quantizePanel.Location = new System.Drawing.Point(0, -3);
+            this.quantizePanel.Name = "quantizePanel";
+            this.quantizePanel.RowCount = 5;
+            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.50237F));
+            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.49763F));
+            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.quantizePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 192F));
+            this.quantizePanel.Size = new System.Drawing.Size(386, 538);
+            this.quantizePanel.TabIndex = 5;
+            // 
+            // quantizeLabel
+            // 
+            this.quantizeLabel.AutoSize = true;
+            this.quantizeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quantizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantizeLabel.Location = new System.Drawing.Point(3, 0);
+            this.quantizeLabel.Name = "quantizeLabel";
+            this.quantizeLabel.Size = new System.Drawing.Size(380, 94);
+            this.quantizeLabel.TabIndex = 0;
+            this.quantizeLabel.Text = "Quantize";
+            this.quantizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // quantizeTrackBar
+            // 
+            this.quantizeTrackBar.Location = new System.Drawing.Point(3, 97);
+            this.quantizeTrackBar.Maximum = 20;
+            this.quantizeTrackBar.Minimum = 2;
+            this.quantizeTrackBar.Name = "quantizeTrackBar";
+            this.quantizeTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.quantizeTrackBar.Size = new System.Drawing.Size(380, 45);
+            this.quantizeTrackBar.TabIndex = 1;
+            this.quantizeTrackBar.Value = 2;
+            this.quantizeTrackBar.Scroll += new System.EventHandler(this.quantizeTrackBar_Scroll);
+            // 
+            // quantizeSave
+            // 
+            this.quantizeSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quantizeSave.Location = new System.Drawing.Point(3, 249);
+            this.quantizeSave.Name = "quantizeSave";
+            this.quantizeSave.Size = new System.Drawing.Size(380, 93);
+            this.quantizeSave.TabIndex = 3;
+            this.quantizeSave.Text = "Set Filter";
+            this.quantizeSave.UseVisualStyleBackColor = true;
+            this.quantizeSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
+            // quantizeTrackBarLabel
+            // 
+            this.quantizeTrackBarLabel.AutoSize = true;
+            this.quantizeTrackBarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quantizeTrackBarLabel.Location = new System.Drawing.Point(3, 173);
+            this.quantizeTrackBarLabel.Name = "quantizeTrackBarLabel";
+            this.quantizeTrackBarLabel.Size = new System.Drawing.Size(380, 73);
+            this.quantizeTrackBarLabel.TabIndex = 2;
+            this.quantizeTrackBarLabel.Text = "2";
+            this.quantizeTrackBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // greyscalePanel
+            // 
+            this.greyscalePanel.ColumnCount = 1;
+            this.greyscalePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.greyscalePanel.Controls.Add(this.greyscaleLabel, 0, 0);
+            this.greyscalePanel.Controls.Add(this.greyscaleBtn, 0, 1);
+            this.greyscalePanel.Controls.Add(this.greyscaleSave, 0, 2);
+            this.greyscalePanel.Location = new System.Drawing.Point(0, -3);
+            this.greyscalePanel.Name = "greyscalePanel";
+            this.greyscalePanel.RowCount = 4;
+            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.39367F));
+            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.60633F));
+            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.greyscalePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 273F));
+            this.greyscalePanel.Size = new System.Drawing.Size(386, 552);
+            this.greyscalePanel.TabIndex = 4;
+            // 
+            // greyscaleLabel
+            // 
+            this.greyscaleLabel.AutoSize = true;
+            this.greyscaleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.greyscaleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greyscaleLabel.Location = new System.Drawing.Point(3, 0);
+            this.greyscaleLabel.Name = "greyscaleLabel";
+            this.greyscaleLabel.Size = new System.Drawing.Size(380, 107);
+            this.greyscaleLabel.TabIndex = 0;
+            this.greyscaleLabel.Text = "Greyscale";
+            this.greyscaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // greyscaleBtn
+            // 
+            this.greyscaleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.greyscaleBtn.Location = new System.Drawing.Point(3, 110);
+            this.greyscaleBtn.Name = "greyscaleBtn";
+            this.greyscaleBtn.Size = new System.Drawing.Size(380, 88);
+            this.greyscaleBtn.TabIndex = 1;
+            this.greyscaleBtn.Text = "Apply Greyscale";
+            this.greyscaleBtn.UseVisualStyleBackColor = true;
+            this.greyscaleBtn.Click += new System.EventHandler(this.greyscaleBtn_Click);
+            // 
+            // greyscaleSave
+            // 
+            this.greyscaleSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.greyscaleSave.Location = new System.Drawing.Point(3, 204);
+            this.greyscaleSave.Name = "greyscaleSave";
+            this.greyscaleSave.Size = new System.Drawing.Size(380, 71);
+            this.greyscaleSave.TabIndex = 2;
+            this.greyscaleSave.Text = "Set Filter";
+            this.greyscaleSave.UseVisualStyleBackColor = true;
+            this.greyscaleSave.Click += new System.EventHandler(this.SaveImageToTemp_Click);
+            // 
             // bottomInfoPanel
             // 
             this.bottomInfoPanel.ColumnCount = 4;
@@ -1581,7 +1625,7 @@
             this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.topToolbarPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.topToolbarPanel.Controls.Add(this.colorBtn, 0, 0);
-            this.topToolbarPanel.Controls.Add(this.trackBar2, 1, 0);
+            this.topToolbarPanel.Controls.Add(this.thicknessTrackBar, 1, 0);
             this.topToolbarPanel.Controls.Add(this.lineBtn, 3, 0);
             this.topToolbarPanel.Controls.Add(this.penBtn, 2, 0);
             this.topToolbarPanel.Controls.Add(this.ellipseBtn, 5, 0);
@@ -1607,17 +1651,17 @@
             this.colorBtn.UseVisualStyleBackColor = false;
             this.colorBtn.Click += new System.EventHandler(this.colorBtn_Click);
             // 
-            // trackBar2
+            // thicknessTrackBar
             // 
-            this.trackBar2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBar2.Location = new System.Drawing.Point(259, 3);
-            this.trackBar2.Maximum = 30;
-            this.trackBar2.Minimum = 1;
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(334, 33);
-            this.trackBar2.TabIndex = 1;
-            this.trackBar2.Value = 1;
-            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            this.thicknessTrackBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.thicknessTrackBar.Location = new System.Drawing.Point(259, 3);
+            this.thicknessTrackBar.Maximum = 30;
+            this.thicknessTrackBar.Minimum = 1;
+            this.thicknessTrackBar.Name = "thicknessTrackBar";
+            this.thicknessTrackBar.Size = new System.Drawing.Size(334, 33);
+            this.thicknessTrackBar.TabIndex = 1;
+            this.thicknessTrackBar.Value = 1;
+            this.thicknessTrackBar.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // lineBtn
             // 
@@ -1680,72 +1724,6 @@
             this.bucketBtn.UseVisualStyleBackColor = true;
             this.bucketBtn.Click += new System.EventHandler(this.bucketBtn_Click);
             // 
-            // colorDialog1
-            // 
-            this.colorDialog1.AnyColor = true;
-            this.colorDialog1.FullOpen = true;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.topToolbarPanel, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.splitContainer1, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.bottomInfoPanel, 0, 2);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 24);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.859756F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.14024F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1337, 687);
-            this.tableLayoutPanel4.TabIndex = 1;
-            // 
-            // procgenLandBtn
-            // 
-            this.procgenLandBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.procgenLandBtn.Location = new System.Drawing.Point(3, 74);
-            this.procgenLandBtn.Name = "procgenLandBtn";
-            this.procgenLandBtn.Size = new System.Drawing.Size(380, 88);
-            this.procgenLandBtn.TabIndex = 1;
-            this.procgenLandBtn.Text = "Generate Land";
-            this.procgenLandBtn.UseVisualStyleBackColor = true;
-            this.procgenLandBtn.Click += new System.EventHandler(this.procgenLandBtn_Click);
-            // 
-            // procgenSky
-            // 
-            this.procgenSky.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.procgenSky.Location = new System.Drawing.Point(3, 168);
-            this.procgenSky.Name = "procgenSky";
-            this.procgenSky.Size = new System.Drawing.Size(380, 91);
-            this.procgenSky.TabIndex = 2;
-            this.procgenSky.Text = "Generate Sky";
-            this.procgenSky.UseVisualStyleBackColor = true;
-            this.procgenSky.Click += new System.EventHandler(this.procgenSky_Click);
-            // 
-            // convolutionLabel2
-            // 
-            this.convolutionLabel2.AutoSize = true;
-            this.convolutionLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionLabel2.Location = new System.Drawing.Point(3, 261);
-            this.convolutionLabel2.Name = "convolutionLabel2";
-            this.convolutionLabel2.Size = new System.Drawing.Size(383, 33);
-            this.convolutionLabel2.TabIndex = 5;
-            this.convolutionLabel2.Text = "Convolution Mask";
-            this.convolutionLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // convolutionLabel3
-            // 
-            this.convolutionLabel3.AutoSize = true;
-            this.convolutionLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.convolutionLabel3.Location = new System.Drawing.Point(3, 432);
-            this.convolutionLabel3.Name = "convolutionLabel3";
-            this.convolutionLabel3.Size = new System.Drawing.Size(383, 37);
-            this.convolutionLabel3.TabIndex = 6;
-            this.convolutionLabel3.Text = "Normalisation Value";
-            this.convolutionLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // colourLabel
             // 
             this.colourLabel.AutoSize = true;
@@ -1770,6 +1748,28 @@
             this.label1.Text = "Thickness:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // colorDialog1
+            // 
+            this.colorDialog1.AnyColor = true;
+            this.colorDialog1.FullOpen = true;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.topToolbarPanel, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.splitContainer1, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.bottomInfoPanel, 0, 2);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 24);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.859756F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.14024F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1337, 687);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -1787,6 +1787,18 @@
             this.splitContainer1.ResumeLayout(false);
             this.pictureBoxPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.brightnessPanel.ResumeLayout(false);
+            this.brightnessPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).EndInit();
+            this.contrastPanel.ResumeLayout(false);
+            this.contrastPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).EndInit();
+            this.invertPanel.ResumeLayout(false);
+            this.invertPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).EndInit();
+            this.noisePanel.ResumeLayout(false);
+            this.noisePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).EndInit();
             this.procgenPanel.ResumeLayout(false);
             this.procgenPanel.PerformLayout();
             this.convolutionPanel.ResumeLayout(false);
@@ -1832,23 +1844,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.quantizeTrackBar)).EndInit();
             this.greyscalePanel.ResumeLayout(false);
             this.greyscalePanel.PerformLayout();
-            this.brightnessPanel.ResumeLayout(false);
-            this.brightnessPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brightnessTrackBar)).EndInit();
-            this.contrastPanel.ResumeLayout(false);
-            this.contrastPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contrastTrackbar)).EndInit();
-            this.invertPanel.ResumeLayout(false);
-            this.invertPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.invertTrackBar)).EndInit();
-            this.noisePanel.ResumeLayout(false);
-            this.noisePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.noiseTrackBar)).EndInit();
             this.bottomInfoPanel.ResumeLayout(false);
             this.bottomInfoPanel.PerformLayout();
             this.topToolbarPanel.ResumeLayout(false);
             this.topToolbarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thicknessTrackBar)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1882,7 +1882,7 @@
         private System.Windows.Forms.TableLayoutPanel topToolbarPanel;
         private System.Windows.Forms.Button colorBtn;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar thicknessTrackBar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button ellipseBtn;
         private System.Windows.Forms.Button rectangleBtn;

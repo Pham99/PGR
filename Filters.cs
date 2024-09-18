@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing.Imaging;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 
 namespace PaintShop
 {
@@ -471,7 +466,7 @@ namespace PaintShop
                 {
                     RandomWalk(ref x, ref y);
                     index = y * bmpData.Stride + x * bytesPerPixel;
-                    if (CheckNeighbours(index, pixels) != 0) 
+                    if (CheckNeighbours(index, pixels) != 0)
                     {
                         index = y * bmpData.Stride + x * bytesPerPixel;
                         pixels[index] = 255;
@@ -531,14 +526,14 @@ namespace PaintShop
 
             while (chunk > 1)
             {
-            int half = chunk / 2;
+                int half = chunk / 2;
                 for (int y = 0; y < size - 1; y += chunk)
                 {
                     for (int x = 0; x < size - 1; x += chunk)
                     {
-                        heightMap[x + half, y + half] = ((heightMap[x, y] + 
-                                                         heightMap[x + chunk, y] + 
-                                                         heightMap[x, y + chunk] + 
+                        heightMap[x + half, y + half] = ((heightMap[x, y] +
+                                                         heightMap[x + chunk, y] +
+                                                         heightMap[x, y + chunk] +
                                                          heightMap[x + chunk, y + chunk])
                                                          / 4) + random.Next(-roughness, roughness);
                     }
